@@ -10,7 +10,7 @@
 #import "HHZHttpRequestCondition.h"
 #import "HHZHttpEncryption.h"
 #import "HHZHttpTagBuilder.h"
-#import "HHZDeviceTool.h"
+#import <HHZUtils/HHZDeviceTool.h>
 #import "HHZHttpManager.h"
 
 NS_ASSUME_NONNULL_BEGIN

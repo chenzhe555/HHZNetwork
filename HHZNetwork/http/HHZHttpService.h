@@ -11,7 +11,7 @@
  */
 
 #import "HHZHttpServiceDelegate.h"
-#import "HHZMethodException.h"
+#import <HHZUtils/HHZMethodException.h>
 #import "HHZHttpStruct.h"
 #import "HHZHttpRequestCondition.h"
 #import "HHZHttpClient.h"
