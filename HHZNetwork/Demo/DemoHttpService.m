@@ -20,7 +20,9 @@
  */
 -(void)manageServiceSuccess:(HHZHttpResponse *)responseObject
 {
-    HHZLog(@"<服务器返回参数:%lu>\n%@\n",(unsigned long)responseObject.tag,responseObject.requestUrl);
+#ifdef DEBUG
+    NSLog(@"<服务器返回参数:%lu>\n%@\n",(unsigned long)responseObject.tag,responseObject.requestUrl);
+#endif
     
     NSString * codeStr = [NSString stringWithFormat:@"%@",[((HHZHttpResponse *)responseObject).object objectForKey:@"ret"]];
     if ([codeStr isEqualToString:@"1"])

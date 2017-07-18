@@ -25,7 +25,10 @@
     [self handleHttpCondition:condition];
     
     //打印上传到信息
-    HHZLog(@"<网络请求参数:%lu>\n%@\n",(long)httpTag,request.paramaters);
+#ifdef DEBUG
+    NSLog(@"<网络请求参数:%lu>\n%@\n",(long)httpTag,request.paramaters);
+#endif
+    
     
     //发送网络请求前的回调
     if (beforeSend) beforeSend(request,condition);
