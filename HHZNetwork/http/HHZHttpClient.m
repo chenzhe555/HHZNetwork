@@ -18,19 +18,14 @@
     //添加附加请求参数
     [self addExtraParamatersWithCondition:request];
     
-#if DEBUG
-    NSLog(@"<网络请求(加密前):%lu>\n%@\n",(long)httpTag,request.paramaters);
-#endif
-    
     //对参数加密
     [self encryptionRequest:request];
     
-#if DEBUG
-    NSLog(@"<网络请求(加密后):%lu>\n%@\n",(long)httpTag,request.paramaters);
-#endif
-    
     //处理Condition情况
     [self handleHttpCondition:condition];
+    
+    //打印上传到信息
+    HHZLog(@"<网络请求参数:%lu>\n%@\n",(long)httpTag,request.paramaters);
     
     //发送网络请求前的回调
     if (beforeSend) beforeSend(request,condition);

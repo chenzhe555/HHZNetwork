@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "HHZHttpURLManager.h"
+#import "DemoHttpURLManager.h"
 
 @interface ViewController ()
 

@@ -97,7 +97,7 @@ Pod::Spec.new do |s|
         three.source_files = 'HHZNetwork/http/*.{h,m}'
       end
 
-end
+  end
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -123,7 +123,7 @@ end
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks = "UIKit", "Foundation"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -139,6 +139,7 @@ end
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-  s.dependency "AFNetworking", "~> 3.1.0"
+  s.dependency "HHZCategory", "~> 0.0.2"
   s.dependency "HHZUtils", "~> 0.0.2"
+  s.dependency "HHZConfigs", "~> 0.0.1"
 end

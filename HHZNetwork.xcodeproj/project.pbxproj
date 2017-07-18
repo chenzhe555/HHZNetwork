@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		742B81EB1F1B9ABC00C8BFDB /* DemoHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 742B81EA1F1B9ABC00C8BFDB /* DemoHttpService.m */; };
+		742B81EF1F1BC4A700C8BFDB /* DemoHttpURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 742B81EE1F1BC4A700C8BFDB /* DemoHttpURLManager.m */; };
 		74A3FAB71F19179400A2706A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FAB61F19179400A2706A /* main.m */; };
 		74A3FABA1F19179400A2706A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FAB91F19179400A2706A /* AppDelegate.m */; };
 		74A3FABD1F19179400A2706A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FABC1F19179400A2706A /* ViewController.m */; };
@@ -26,6 +28,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		742B81E91F1B9ABC00C8BFDB /* DemoHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoHttpService.h; sourceTree = "<group>"; };
+		742B81EA1F1B9ABC00C8BFDB /* DemoHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoHttpService.m; sourceTree = "<group>"; };
+		742B81EC1F1B9C1000C8BFDB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		742B81ED1F1BC4A700C8BFDB /* DemoHttpURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoHttpURLManager.h; sourceTree = "<group>"; };
+		742B81EE1F1BC4A700C8BFDB /* DemoHttpURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoHttpURLManager.m; sourceTree = "<group>"; };
 		74A3FAB21F19179400A2706A /* HHZNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHZNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A3FAB61F19179400A2706A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74A3FAB81F19179400A2706A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +97,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		742B81E51F1B991D00C8BFDB /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				742B81E91F1B9ABC00C8BFDB /* DemoHttpService.h */,
+				742B81EA1F1B9ABC00C8BFDB /* DemoHttpService.m */,
+				742B81ED1F1BC4A700C8BFDB /* DemoHttpURLManager.h */,
+				742B81EE1F1BC4A700C8BFDB /* DemoHttpURLManager.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		74A3FAA91F19179400A2706A = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +129,7 @@
 		74A3FAB41F19179400A2706A /* HHZNetwork */ = {
 			isa = PBXGroup;
 			children = (
+				742B81E51F1B991D00C8BFDB /* Demo */,
 				74A3FACC1F19193D00A2706A /* http */,
 				74A3FAB81F19179400A2706A /* AppDelegate.h */,
 				74A3FAB91F19179400A2706A /* AppDelegate.m */,
@@ -121,6 +140,7 @@
 				74A3FAC31F19179400A2706A /* LaunchScreen.storyboard */,
 				74A3FAC61F19179400A2706A /* Info.plist */,
 				74A3FAB51F19179400A2706A /* Supporting Files */,
+				742B81EC1F1B9C1000C8BFDB /* PrefixHeader.pch */,
 			);
 			path = HHZNetwork;
 			sourceTree = "<group>";
@@ -287,6 +307,7 @@
 				74A3FAE61F19193D00A2706A /* HHZHttpService.m in Sources */,
 				74A3FABA1F19179400A2706A /* AppDelegate.m in Sources */,
 				74A3FAE71F19193D00A2706A /* HHZHttpStruct.m in Sources */,
+				742B81EF1F1BC4A700C8BFDB /* DemoHttpURLManager.m in Sources */,
 				74A3FAE31F19193D00A2706A /* HHZHttpManager.m in Sources */,
 				74A3FAE21F19193D00A2706A /* HHZHttpEncryption.m in Sources */,
 				74A3FAE41F19193D00A2706A /* HHZHttpManagerFactory.m in Sources */,
@@ -294,6 +315,7 @@
 				74A3FAE81F19193D00A2706A /* HHZHttpTagBuilder.m in Sources */,
 				74A3FAE51F19193D00A2706A /* HHZHttpRequestCondition.m in Sources */,
 				74A3FAE91F19193D00A2706A /* HHZHttpURLManager.m in Sources */,
+				742B81EB1F1B9ABC00C8BFDB /* DemoHttpService.m in Sources */,
 				74A3FAE11F19193D00A2706A /* HHZHttpClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P5LP3WSZUP;
+				GCC_PREFIX_HEADER = "${SRCROOT}/HHZNetwork/PrefixHeader.pch";
 				INFOPLIST_FILE = HHZNetwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhe.HHZNetwork;
@@ -429,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P5LP3WSZUP;
+				GCC_PREFIX_HEADER = "${SRCROOT}/HHZNetwork/PrefixHeader.pch";
 				INFOPLIST_FILE = HHZNetwork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhe.HHZNetwork;

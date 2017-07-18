@@ -14,6 +14,7 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - HHZConfigs (0.0.1)
   - HHZUtils (0.0.2):
     - HHZUtils/HHZUtils (= 0.0.2)
   - HHZUtils/HHZUtils (0.0.2):
@@ -54,12 +55,14 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
+  - HHZConfigs (~> 0.0.1)
   - HHZUtils (~> 0.0.2)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  HHZConfigs: ec7b50d7bc0f7738a1e104b325b22a5ab81ece85
   HHZUtils: eb8df0af9afb762b76423b09ae6e3dbc15085a7f
 
-PODFILE CHECKSUM: aa8acc7d2c72ebfd502a4125f4f5a1e7ec2a9626
+PODFILE CHECKSUM: 6be60dfff14a88e5e9a4a4a6c6494b41e5aec237
 
 COCOAPODS: 1.3.0.beta.1

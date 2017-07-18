@@ -16,35 +16,39 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface HHZHttpURLManager : NSObject
+
 /**
- *  获取URL管理实例 (如果要用Manager的话，一定要重写init方法!!!（可以参考.m文件）)
+ *  存放URL地址的字典
+ */
+@property (nonatomic, strong) NSMutableDictionary * urlDic;
+
+/**
+ *  获取URL管理实例
  *
  *  @return
  */
 +(instancetype)shareManager;
 
-#pragma mark 服务器返回新的url地址
+/**
+ *  加载URLs
+ *
+ *  @return
+ */
+-(void)loadURLs;
 
 /**
  *  设置网络请求的基本地址
  *
  *  @param dic
  */
--(void)setHttpRequestURL:(NSDictionary *)dic;
-
-
-
-
-
-
-#pragma mark 获取请求需要的URL地址们
+-(void)pushURL:(NSString *)httpURL Key:(NSString *)key;
 
 /**
- *  获取测试地址的请求地址
+ *  更新网络请求基本地址
  *
- *  @return 
+ *  @param dic
  */
--(NSString *)getTestUrl;
+-(void)updateHttpRequestURL:(NSDictionary *)dic;
 
 @end
 

@@ -8,100 +8,100 @@
 
 /* Begin PBXBuildFile section */
 		0214246CCB1FF7182F7222B9CCDF8FCB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F921D275AC6AA48C031BF91FD4592584 /* Foundation.framework */; };
-		04F917AA52BE01930867390FF31256EF /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 7824CCF5A77DF4FC60CC808A5813D915 /* GTMBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E515196C44DFC94ECBFCDE6C135059D /* HHZUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1E22644EE2B5D4162F8632CA2707023 /* HHZUtils-dummy.m */; };
-		1341A7AC2439CB63D459D32EF985A414 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 076485AF8DBAF36D3E6A78A068B2EA64 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19E28FEC62BF2F5ED01E870087CE3DBB /* HHZKitTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 93DA70630DFEB9F4F69871611DB38F34 /* HHZKitTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1BD033A47A1457AC4D2DC05900EAEEEE /* HHZNumericalTool.h in Headers */ = {isa = PBXBuildFile; fileRef = A7970F9BD7F9A87BFA3C946477BE7CED /* HHZNumericalTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2579663181BFA8F7DA4B5D7CF8537FC0 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = DC87684B5FD7FD422ACBD9E8AA706DCC /* UIActivityIndicatorView+AFNetworking.m */; };
-		2EBAA518CB8B2DAF89A63637091D4615 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 793F2EFB8F59EDE8DA10B22978DB80A4 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04F917AA52BE01930867390FF31256EF /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = C70AFEF1437C52791A736022AF8A5543 /* GTMBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E515196C44DFC94ECBFCDE6C135059D /* HHZUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 056528EB08CB1504BD33E2CC5020734B /* HHZUtils-dummy.m */; };
+		1341A7AC2439CB63D459D32EF985A414 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D7543577897CFEFCCB569C1D4398EE17 /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19E28FEC62BF2F5ED01E870087CE3DBB /* HHZKitTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A2580F2E21144F4E7120E8548C81DB0 /* HHZKitTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BD033A47A1457AC4D2DC05900EAEEEE /* HHZNumericalTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 8197589FAC194B7E9F4DF7CAEE8FF785 /* HHZNumericalTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2579663181BFA8F7DA4B5D7CF8537FC0 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1466FA1E1D81068F7756E8D4A6FB0779 /* UIActivityIndicatorView+AFNetworking.m */; };
+		2EBAA518CB8B2DAF89A63637091D4615 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BBC5073DA9C6A04A9CE8DDE3F880F2D2 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3143B2C0EC870AA400D041717B5DEDD8 /* Pods-HHZNetwork-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B614DB6EC90699239118C4645E5A14B4 /* Pods-HHZNetwork-dummy.m */; };
-		31ED9BD97AF9E62874AF3CDF2F8090CF /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A3ECB24390C0F02F37E42F3E3D828F /* AFNetworkActivityIndicatorManager.m */; };
-		3290FEAECF74170D572C06DBED0B94FF /* HHZAESEncryption.h in Headers */ = {isa = PBXBuildFile; fileRef = 5478FC402F81C640BF50208D6F98DE22 /* HHZAESEncryption.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		32BCE00243B000581650140BAEA193BA /* HHZArchiveTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BA3106A088F922914A2CD7CD5DD5172 /* HHZArchiveTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3495A4847115E48287EFB201BD78FD1A /* HHZDateTool_Format.h in Headers */ = {isa = PBXBuildFile; fileRef = BC033CB4DCDC02FEF222BA6DD3FABCAA /* HHZDateTool_Format.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		393701766891CF9A1F721063CD9627C5 /* HHZPlistTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F2A0658BB715176165E46628B48E75 /* HHZPlistTool.m */; };
-		45648CC8F6A3DD6EB056FDB22052293C /* HHZDateToolFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 23A813BE6B93C3F137F8C257B5CB3F73 /* HHZDateToolFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46401F3C7FF0B0CFE2E9B14914780835 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = C833287B3A9EAD1E051F8C2EFB905087 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4899BA640A5A40B94B163D34E0796252 /* HHZEncrptionFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = B67353769E64F67680790105E71EE135 /* HHZEncrptionFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AED2CB7FF276D8BA83284B5D7EE47EE /* HHZDESEncryption.h in Headers */ = {isa = PBXBuildFile; fileRef = 01E6604E063BA3E43640E601AC6D82F8 /* HHZDESEncryption.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4D962B01A95B9894DF5FBF472097D320 /* HHZCookieGenerateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = D1B3DF12027C7C350B1E2DE9A94AA5C9 /* HHZCookieGenerateUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55068D70FC61EB1B2ABF5223E6E8281E /* HHZDateTool.h in Headers */ = {isa = PBXBuildFile; fileRef = D3F76FE35885E08CF3ABD7DF39E27D97 /* HHZDateTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5719F06B809080CDEF7E6BC75DEA1A3C /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = BEAAE1F1B9CCC3D6B7FD9B51FC5446AC /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5945033488F9995134DBB7014DE2412F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 68DDB6511EEFF3F45283F0666DEA9683 /* AFURLRequestSerialization.m */; };
-		5B84DF8DE5433885CF4D4A3BEB96FD8E /* HHZArchiveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C913DD3578F25FE67AB74E6BDECD6AC9 /* HHZArchiveTool.m */; };
-		5C0696B2AD1DC23F6473F5A19FAB6296 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 95C83EFF8915ED8E7C9CC2B2B07C16DF /* AFImageDownloader.m */; };
-		61EF970928C9BC3FCB3FAA604E927A7A /* HHZThreadSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = F62956BD3C69B485FAB20F96FDDC2E23 /* HHZThreadSafeArray.m */; };
-		629B1291A61F30635F28BEF448B7A8F0 /* HHZMethodException.m in Sources */ = {isa = PBXBuildFile; fileRef = 987E546780CF84DF3BF200548C237F2D /* HHZMethodException.m */; };
-		66635EAAE52FF5571DBCDC626FB8CA86 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = F7F27561E2672AED4727C5C7F32F3EED /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66E1040543AF7BA3DC3731FE17C85F5B /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBD32A95F99463656E489F44556440D8 /* AFSecurityPolicy.m */; };
-		682B0E603612B6ADBCCF30580F9A4B09 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 94EB89FA6DECD97AA7110F70CFC7170D /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6B71CE5BA32574F407349C1DA20605B4 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 642C804AE7FDF9AD030B784FAF21FADF /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		707E818332E5033501DF2D7826C639DF /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = AA471F65CD8542C5A16064CDFCDF5265 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		736FDF0FC769C4BB6BB1ED313288D77E /* HHZRegularTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D8A0EC2273A6122F6F3EC19A7D80AE /* HHZRegularTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		73811DA312BCB537D44D62EC6AD15766 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BEC420FB1E2C09A8EDCDB40BE20DB5 /* AFHTTPSessionManager.m */; };
-		775CE7A8107457BDE59F113D40020839 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = C5944D29E723ABBD060CF6656FCEED32 /* AFAutoPurgingImageCache.m */; };
-		7BD5BAE7187A27DA4094312B82B8E374 /* HHZDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B40329EE3B421FCD1764311F0A34BED /* HHZDeviceTool.m */; };
-		7CDC171348C656BE9FD0A2B03E860E8E /* HHZJSONTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC09AE15C44757180B386FFFFC2A8EA /* HHZJSONTool.m */; };
-		7E1E262F225D5F74005E82F7132C9AF3 /* HHZFileHashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9091ADD2673A562BD0300839324B59DF /* HHZFileHashTool.m */; };
-		85D30678FF4F0AB306399A368EAA46B2 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE7506802D0E0D2F01EC0B1274DD675 /* AFURLResponseSerialization.m */; };
-		8788A1DF84FC43A8A3549FF2D8717214 /* HHZRegularTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5193CA148352C7BBD90A9A77AEB5C091 /* HHZRegularTool.m */; };
-		8958F2453EEBAF71BFEBD78FB48986EC /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A951E7A99E593294CA24F8EDCC54A0 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E273497A213C6BC57A5057D9F70C68C /* HHZPlistTool.h in Headers */ = {isa = PBXBuildFile; fileRef = DABBE623F9254AF03EC1C053ECB26B70 /* HHZPlistTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E5C94732B438E4D91ACACD19A16C88D /* HHZBase64Encrption.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A6DA663A6A5C95C285E8C0528B419DE /* HHZBase64Encrption.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8EE4DD9C33F408641DF1493BD42B3400 /* HHZNumericalTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4662CD16E355A2AF9C64C2DF06A530F0 /* HHZNumericalTool.m */; };
+		31ED9BD97AF9E62874AF3CDF2F8090CF /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C482AB5C749124D61C84595E4D8C10A /* AFNetworkActivityIndicatorManager.m */; };
+		3290FEAECF74170D572C06DBED0B94FF /* HHZAESEncryption.h in Headers */ = {isa = PBXBuildFile; fileRef = EBCA949D33D9C42517631C3E85E7EA2E /* HHZAESEncryption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32BCE00243B000581650140BAEA193BA /* HHZArchiveTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 536A4C2E126CD85D71ED067F6021411E /* HHZArchiveTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3495A4847115E48287EFB201BD78FD1A /* HHZDateTool_Format.h in Headers */ = {isa = PBXBuildFile; fileRef = E065C840B549646526C9E94F88FDEFCE /* HHZDateTool_Format.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		393701766891CF9A1F721063CD9627C5 /* HHZPlistTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB8346BACDF2631D95A06BE750F404F /* HHZPlistTool.m */; };
+		45648CC8F6A3DD6EB056FDB22052293C /* HHZDateToolFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = E75B063F899C62CBE909C0897D0BEF68 /* HHZDateToolFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46401F3C7FF0B0CFE2E9B14914780835 /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D55DFF7366B8E6E6BABB39DCAAFE6CC6 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4899BA640A5A40B94B163D34E0796252 /* HHZEncrptionFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 769480EC74004924A209249EEA1A3245 /* HHZEncrptionFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AED2CB7FF276D8BA83284B5D7EE47EE /* HHZDESEncryption.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CD4DF0C9D5CADE4D25D2F25A4E7DF61 /* HHZDESEncryption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D962B01A95B9894DF5FBF472097D320 /* HHZCookieGenerateUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 4055B846FCE8AA81C7538762FB597232 /* HHZCookieGenerateUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55068D70FC61EB1B2ABF5223E6E8281E /* HHZDateTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D77108D34453C72D690B560CA20C250 /* HHZDateTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5719F06B809080CDEF7E6BC75DEA1A3C /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = CA82F36844AC41B0C139CB22C8D9E7AE /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5945033488F9995134DBB7014DE2412F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 13CC9CAF8D25FB3EAFDBAF205D6ADCDE /* AFURLRequestSerialization.m */; };
+		5B84DF8DE5433885CF4D4A3BEB96FD8E /* HHZArchiveTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 37216AF3FC56EAF00D5D933A37181554 /* HHZArchiveTool.m */; };
+		5C0696B2AD1DC23F6473F5A19FAB6296 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EAFE76518237CF6CDB0C1E6564A474 /* AFImageDownloader.m */; };
+		61EF970928C9BC3FCB3FAA604E927A7A /* HHZThreadSafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4BB73CB7066EA0A33A3F3F07FC6028 /* HHZThreadSafeArray.m */; };
+		629B1291A61F30635F28BEF448B7A8F0 /* HHZMethodException.m in Sources */ = {isa = PBXBuildFile; fileRef = 687E76412D9F58BEBC6948F72C786B8E /* HHZMethodException.m */; };
+		66635EAAE52FF5571DBCDC626FB8CA86 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = A999DC51653FB416F5C0088E814A7E11 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66E1040543AF7BA3DC3731FE17C85F5B /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD30800E40E9836FB3D97170BA7AA309 /* AFSecurityPolicy.m */; };
+		682B0E603612B6ADBCCF30580F9A4B09 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F86D8F566B47C15EB923B3C9910E4D19 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B71CE5BA32574F407349C1DA20605B4 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C211157BC63D9BB03CA7E41B77F80AE9 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		707E818332E5033501DF2D7826C639DF /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CF925D3EE80FF1049B30A3F75B00E72 /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		736FDF0FC769C4BB6BB1ED313288D77E /* HHZRegularTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 18A00C6C7C47BE8255651E357A1B30EF /* HHZRegularTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73811DA312BCB537D44D62EC6AD15766 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BAA65A1AC77BC222DE1BE9FE809E786 /* AFHTTPSessionManager.m */; };
+		775CE7A8107457BDE59F113D40020839 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BF54984ADC6F07EFD6F94D0797A43C86 /* AFAutoPurgingImageCache.m */; };
+		7BD5BAE7187A27DA4094312B82B8E374 /* HHZDeviceTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FE735E17191B0FB26CBEA57E89A8E01F /* HHZDeviceTool.m */; };
+		7CDC171348C656BE9FD0A2B03E860E8E /* HHZJSONTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 849CE21EFFF7C4EA996A4B98FA34DBEF /* HHZJSONTool.m */; };
+		7E1E262F225D5F74005E82F7132C9AF3 /* HHZFileHashTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD9715D9E2E68FD46E83BB13B32FBC /* HHZFileHashTool.m */; };
+		85D30678FF4F0AB306399A368EAA46B2 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 588E7B13E2776504D128406C807887C4 /* AFURLResponseSerialization.m */; };
+		8788A1DF84FC43A8A3549FF2D8717214 /* HHZRegularTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B235907B66A7594CFDD03B09FEC161B3 /* HHZRegularTool.m */; };
+		8958F2453EEBAF71BFEBD78FB48986EC /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 943246A6FD311002EC412AABC7D7C920 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E273497A213C6BC57A5057D9F70C68C /* HHZPlistTool.h in Headers */ = {isa = PBXBuildFile; fileRef = EA991F9642C3F750FCC98749E767D002 /* HHZPlistTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E5C94732B438E4D91ACACD19A16C88D /* HHZBase64Encrption.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D03739E2CCCB8A59154606632A52AD /* HHZBase64Encrption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EE4DD9C33F408641DF1493BD42B3400 /* HHZNumericalTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A079A3834B8CC9F40FEFD4BBF1C8F36 /* HHZNumericalTool.m */; };
 		903158692A045396106CA22C0DD13BA6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8A7C0B6179467051ED95E59DB2AF9F /* SystemConfiguration.framework */; };
-		92029B573B29F62A0CD98CBAAB126D13 /* HHZCookieGenerateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 823BEA0E4AB57EBCE8926DCAD4C70A6C /* HHZCookieGenerateUtil.m */; };
-		92945D9C7F34AF13CC19621E0EBC5660 /* HHZPathTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2880C63E491CD62E9B86D6CC68366D50 /* HHZPathTool.m */; };
-		967C612F4965A6BAE800129B1C366055 /* HHZApplicationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E189A61D9097C8C1435211E2E4F0143 /* HHZApplicationTool.m */; };
-		97A86FAAD4B1AD9B3292FF6AF1D8F82B /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F4389C7254BA53F32784289441583E81 /* AFNetworking-dummy.m */; };
-		9CA117D175B9FED6AA568D4506665048 /* HHZAESEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 112CCDB0987DEF7333B0440A1402073F /* HHZAESEncryption.m */; };
-		9D54C8114CD01CCDFA53040A209CD78F /* HHZCalculateTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CB35549B8878550FDB6B052879C9484 /* HHZCalculateTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F5BB6B4995BA4A3B2C6AEBA6C31A6DB /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B88FE2BDF52AA961EBAA0EFF2327BD7D /* AFURLSessionManager.m */; };
-		A277AD9070E44BED5A7DE0B1D64D6F15 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A4C7710B0D8671D7717A857607BDA7 /* UIImageView+AFNetworking.m */; };
-		A458705E9BF37C5C0C7490041CF769B8 /* HHZMD5Encryption.h in Headers */ = {isa = PBXBuildFile; fileRef = 8582DECCFF90F34DB1A6709811018C39 /* HHZMD5Encryption.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A7F7FDCD36E2DD8D8E346DB19452CC03 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 38713BBA4C03982ECAF958D70CCF73C2 /* UIWebView+AFNetworking.m */; };
-		A83C91EEBD5C7FBE9AB8152DCF1262FB /* HHZReachabilityTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D59744C7EC96EFEC5658A165D75E5B0 /* HHZReachabilityTool.m */; };
-		AC3BA5CCCDB4F3FDEA0DF717A6AE486A /* HHZKitTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 17255A1593180B3925ED600DB38BCCBF /* HHZKitTool.m */; };
-		ACFE6FD5424A21E23B01A49D03ECDB93 /* HHZPathTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 8ABE8C7A61126DFD0149C32778AC9943 /* HHZPathTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ADA9ADA261D0538E8DF9718E6CD7005E /* HHZEncrptionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5DDA6E1CB5414508F75074286FC30E /* HHZEncrptionFactory.m */; };
-		AEAF732549359CB2BE65BAFB89E35C88 /* HHZCalculateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 562D34155A009811D705EA02461E6276 /* HHZCalculateTool.m */; };
-		B06CB0A2CC9B5F210D4ABB49A54EBD3C /* HHZDateToolFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1A234BEE700FD28A6CA4C5E7E7A3FD /* HHZDateToolFactory.m */; };
-		B40756412613B53C80EE77C4C223990F /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B1B0313769A0509C7C32EC18B01A678B /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B4B6C3F00EC5A60163293D509C76BAEB /* HHZApplicationTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 0037FAB0B59FDEDFD1F0682B60BC08BF /* HHZApplicationTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B84CD33084C9867E67BD56E47B7BFC04 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2882C9267B1D2402DA48152985CAF352 /* UIRefreshControl+AFNetworking.m */; };
-		BB443AC3DBE2C2954711E9CD023C3A92 /* HHZThreadSafeDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C50D7AAC19AD91E2E3A1FFAEEF6B618 /* HHZThreadSafeDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC4FDCC45BF30921589BBDFD91F39932 /* HHZFileHashTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B574B658F16887219BBC7B4BAD083EC /* HHZFileHashTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFBEAC7571E1959711AC826B468AC726 /* HHZDateTool_Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B57508940605211D7A42D634B22012 /* HHZDateTool_Format.m */; };
-		C1C0D7C93BF3DE14A26757273598D0FA /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = AAF5D1FD2763B3319C72B808630FC2EF /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92029B573B29F62A0CD98CBAAB126D13 /* HHZCookieGenerateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E03455FED2ABB97591BA61A5C430993 /* HHZCookieGenerateUtil.m */; };
+		92945D9C7F34AF13CC19621E0EBC5660 /* HHZPathTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57450F878E5623F299F14D18097906D6 /* HHZPathTool.m */; };
+		967C612F4965A6BAE800129B1C366055 /* HHZApplicationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7184A17125C354C1B02A3EF1927DB6 /* HHZApplicationTool.m */; };
+		97A86FAAD4B1AD9B3292FF6AF1D8F82B /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 064B3E182C8511FDCD1562EF1BCDD744 /* AFNetworking-dummy.m */; };
+		9CA117D175B9FED6AA568D4506665048 /* HHZAESEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 853A4C9AFB0435A24D01697F38DDB687 /* HHZAESEncryption.m */; };
+		9D54C8114CD01CCDFA53040A209CD78F /* HHZCalculateTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 77A87C91425805AF2C9470FF6C077E6A /* HHZCalculateTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F5BB6B4995BA4A3B2C6AEBA6C31A6DB /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC8E63E6D69F37916908F060CCE7416 /* AFURLSessionManager.m */; };
+		A277AD9070E44BED5A7DE0B1D64D6F15 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8276144F0CD269BD1257EDC23E51F02F /* UIImageView+AFNetworking.m */; };
+		A458705E9BF37C5C0C7490041CF769B8 /* HHZMD5Encryption.h in Headers */ = {isa = PBXBuildFile; fileRef = 7728530E1FFAFD2DD2F4208DCC9CF77A /* HHZMD5Encryption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7F7FDCD36E2DD8D8E346DB19452CC03 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 51206F2A3EFB7FD663DBDDA85C9C04BE /* UIWebView+AFNetworking.m */; };
+		A83C91EEBD5C7FBE9AB8152DCF1262FB /* HHZReachabilityTool.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD3FF25AA0F667988D7B0194C6ABC1F /* HHZReachabilityTool.m */; };
+		AC3BA5CCCDB4F3FDEA0DF717A6AE486A /* HHZKitTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 956EC9FC30AA274891552792312645BB /* HHZKitTool.m */; };
+		ACFE6FD5424A21E23B01A49D03ECDB93 /* HHZPathTool.h in Headers */ = {isa = PBXBuildFile; fileRef = BE8AFBAED4EB8DECC381608E527BEEA1 /* HHZPathTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADA9ADA261D0538E8DF9718E6CD7005E /* HHZEncrptionFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 18053C7B52B1CE4E21A2084C0A2D9346 /* HHZEncrptionFactory.m */; };
+		AEAF732549359CB2BE65BAFB89E35C88 /* HHZCalculateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 758F74C1C88EE95C5A94F8CF8EBE4285 /* HHZCalculateTool.m */; };
+		B06CB0A2CC9B5F210D4ABB49A54EBD3C /* HHZDateToolFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 952033D8411ADCB2032BD9586BCB9579 /* HHZDateToolFactory.m */; };
+		B40756412613B53C80EE77C4C223990F /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F0F468A2BB139B9A6159082F30E5DF1C /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B4B6C3F00EC5A60163293D509C76BAEB /* HHZApplicationTool.h in Headers */ = {isa = PBXBuildFile; fileRef = D5EA89E57AB33E38D877A90254DAA3F9 /* HHZApplicationTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B84CD33084C9867E67BD56E47B7BFC04 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 531D2EF27B1F7461A8D46278C0571C7C /* UIRefreshControl+AFNetworking.m */; };
+		BB443AC3DBE2C2954711E9CD023C3A92 /* HHZThreadSafeDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = F029CFEC131A73999E5F51A6FB0A4F98 /* HHZThreadSafeDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BC4FDCC45BF30921589BBDFD91F39932 /* HHZFileHashTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B5613A2491604411BA49377EE81DE0D /* HHZFileHashTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFBEAC7571E1959711AC826B468AC726 /* HHZDateTool_Format.m in Sources */ = {isa = PBXBuildFile; fileRef = 3461B648298A64D88A741AB2656167B4 /* HHZDateTool_Format.m */; };
+		C1C0D7C93BF3DE14A26757273598D0FA /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = B666679F491838177318DD2700ADCBCE /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C249B3EEB02C7669800381749B853231 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F921D275AC6AA48C031BF91FD4592584 /* Foundation.framework */; };
-		C855D2C844A504CBF599D530384C11A4 /* HHZMapTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A9B32F1574AD83F39C46BC75EAA6CCC /* HHZMapTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C855D2C844A504CBF599D530384C11A4 /* HHZMapTool.h in Headers */ = {isa = PBXBuildFile; fileRef = F59E19BD747EBF97819F15E6319EA884 /* HHZMapTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CBCCEAD402645565401CA93924736979 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A64716173FC0305057230E14CDCC7A77 /* CoreGraphics.framework */; };
-		CC8314F144A50C3CB077E1827602C549 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 977EEC715D76ABF3E8D2E0A8DB8B7392 /* GTMBase64.m */; };
-		D00F618AD43C1AD194C095CACC4AD62C /* HHZMD5Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = DCC9D659B6B55A2431A29B63CD128BDC /* HHZMD5Encryption.m */; };
-		D10CC46035F7A0C868C0955664A34609 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 120998386E1EED6295D263C61C215F57 /* UIButton+AFNetworking.m */; };
-		D16DD66F86B837F07EE7DD92959A8E55 /* HHZDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A5126F50C692CA4C2C664C503EFF276D /* HHZDateTool.m */; };
-		D22C883235F143B3DA2BE88EE0F2C943 /* HHZReachabilityTool.h in Headers */ = {isa = PBXBuildFile; fileRef = B3A2F2B513F2FBFB98DD4D0B0F7B3811 /* HHZReachabilityTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D4AA4704CA7863CC86E22AAF88635836 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 768BC1C2E5838D9A5A3CD8A7D783FF81 /* UIProgressView+AFNetworking.m */; };
-		D59FC98A74E440C4725B6FDC28F5951E /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = E23A51FC2A9131FE1438227AEAB73D71 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5CB999FB5FC80FC126A38AB4DF12227 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EF731FF4266EAAD5973045F385B7E5C /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D7DCF244A5A8743ED144F08994589EC0 /* HHZMapTool.m in Sources */ = {isa = PBXBuildFile; fileRef = F8A8CCC1C89372944E1DD9471512C3F4 /* HHZMapTool.m */; };
+		CC8314F144A50C3CB077E1827602C549 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B5BC539C14D4E5CEAC454B7A9F6BDD /* GTMBase64.m */; };
+		D00F618AD43C1AD194C095CACC4AD62C /* HHZMD5Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF942D6F80D309035EA2B7DDF376240 /* HHZMD5Encryption.m */; };
+		D10CC46035F7A0C868C0955664A34609 /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D15D55BC49E9FF95C7F740CEB582C8 /* UIButton+AFNetworking.m */; };
+		D16DD66F86B837F07EE7DD92959A8E55 /* HHZDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDA431E046EAB8EB682D1168FB83CD0 /* HHZDateTool.m */; };
+		D22C883235F143B3DA2BE88EE0F2C943 /* HHZReachabilityTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D59A0F51DE098D233EC337B168073C8 /* HHZReachabilityTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4AA4704CA7863CC86E22AAF88635836 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF4A4F7FCB4FF6E322CA8D0B109590D /* UIProgressView+AFNetworking.m */; };
+		D59FC98A74E440C4725B6FDC28F5951E /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = A47279185588526C428AD32474B8FE7F /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5CB999FB5FC80FC126A38AB4DF12227 /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D306C6A118C8742BFBAA7E41EECD65E /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7DCF244A5A8743ED144F08994589EC0 /* HHZMapTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BADCCFBE3D39C652B4E0C2719070399C /* HHZMapTool.m */; };
 		D836FA2588FA5A2A7E5F49607BA8E665 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F921D275AC6AA48C031BF91FD4592584 /* Foundation.framework */; };
-		DE31BBF6A7963C5871A19655EF5532BE /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 86ED8A3D1AC96D49973AEA013F40021B /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DE650FF86E53F37EC5F313E70AA5A30F /* HHZDESEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = C26CD1B53404353305CA01700AB84627 /* HHZDESEncryption.m */; };
+		DE31BBF6A7963C5871A19655EF5532BE /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E3120DBA65368745DF6A39CCB1FED96 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE650FF86E53F37EC5F313E70AA5A30F /* HHZDESEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 9697EB3F18182A4D68366E1F89F7AA01 /* HHZDESEncryption.m */; };
 		DE825B8F32AB823F4BE5492CAC6FCB4B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A9374C39A6EFA90AD3F2E64799ECC5 /* Security.framework */; };
-		E0EF330DB2D3521ED26E67B2E8687A2E /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 676C1AF8C48D43E10673253F7ACC9A05 /* AFNetworkReachabilityManager.m */; };
-		E1F53EB85C708EF7023529072DA752AA /* HHZThreadSafeArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 98F36C4DB992987A097459FD0AA4CF29 /* HHZThreadSafeArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E4539301B5BCD90FDD4D176196DAA043 /* HHZBase64Encrption.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF65FD9A17E2EE0A247FB705BDFC99C /* HHZBase64Encrption.m */; };
-		E7B0270BEDCBE116DDD853F76E27B0BA /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 336E9B5AC8A25AFFE065E12BF07C6ED1 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F099E5987DD80E8D78E909AF81D3C587 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 30F19135807B4400E74BA2FD90B02366 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F1F93EE1AA5E870F2CE81325CE9EB643 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B9BAC0E0C5C58D44A33F7B28A662D3B /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F2BDCCA5013DE776C1EA74A56B15C971 /* HHZMethodException.h in Headers */ = {isa = PBXBuildFile; fileRef = 247EBC6543511D6B9A3649966C867911 /* HHZMethodException.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3F349A98FCF51F20B45E917EBEBB488 /* HHZThreadSafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A21D1BE45D5264C9AD8793E37922AEF4 /* HHZThreadSafeDictionary.m */; };
-		F45EEBF56CFF38EA20C19691C9435768 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E66FDFFCE2455531DD78834F9747973 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5CC06F3E0C232483A72DCCFAF393BE0 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 43D7BDFF93CA17120D33007EC7B76971 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F683F2A553ADD5E3F906A3F5E018608A /* HHZDeviceTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 67153A8397B69AC9523313B3D1FA91E3 /* HHZDeviceTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F78FAB106FB690DDEA04C0FA442F2043 /* HHZJSONTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 86EBF52FD44807C986319E06E5CD8425 /* HHZJSONTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0EF330DB2D3521ED26E67B2E8687A2E /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CEA731B06FC7C658DA330CC33D2B601 /* AFNetworkReachabilityManager.m */; };
+		E1F53EB85C708EF7023529072DA752AA /* HHZThreadSafeArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 39E36A5877DA70667F13FAA342CFA510 /* HHZThreadSafeArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4539301B5BCD90FDD4D176196DAA043 /* HHZBase64Encrption.m in Sources */ = {isa = PBXBuildFile; fileRef = B3D3D58E4DF9E736B82D4801136D8F3B /* HHZBase64Encrption.m */; };
+		E7B0270BEDCBE116DDD853F76E27B0BA /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 028439B4270DE5A03B71917270E60977 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F099E5987DD80E8D78E909AF81D3C587 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = D92F609115B48962ED8A8FF9345E57DE /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1F93EE1AA5E870F2CE81325CE9EB643 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 894F838F6E986C63A29CE88DC6A8A50A /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2BDCCA5013DE776C1EA74A56B15C971 /* HHZMethodException.h in Headers */ = {isa = PBXBuildFile; fileRef = FD53E717EAA3B47821770C0C01E3E46A /* HHZMethodException.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3F349A98FCF51F20B45E917EBEBB488 /* HHZThreadSafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 19CBE85E253151C1FAD6A65F4DCCDD67 /* HHZThreadSafeDictionary.m */; };
+		F45EEBF56CFF38EA20C19691C9435768 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 34A246703E44F6985080F0E50F5F724F /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5CC06F3E0C232483A72DCCFAF393BE0 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 684B7F1C4CD22D2A6BC9D5900AFFB60E /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F683F2A553ADD5E3F906A3F5E018608A /* HHZDeviceTool.h in Headers */ = {isa = PBXBuildFile; fileRef = FF7EAC581DAB33A2EF8B3A6DCDE0DCFB /* HHZDeviceTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F78FAB106FB690DDEA04C0FA442F2043 /* HHZJSONTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 009346C10989439D39E00949F8983F72 /* HHZJSONTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8DCA6C3C05A59B2C95A1B5F1CBD8C99 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9FDBCCB266ACFED93E55656FD8A014C /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
@@ -123,114 +123,115 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0037FAB0B59FDEDFD1F0682B60BC08BF /* HHZApplicationTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZApplicationTool.h; path = HHZUtils/application/HHZApplicationTool.h; sourceTree = "<group>"; };
+		009346C10989439D39E00949F8983F72 /* HHZJSONTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZJSONTool.h; path = HHZUtils/json/HHZJSONTool.h; sourceTree = "<group>"; };
 		01352FE65A208D2DE12046CCE6FA6D08 /* libPods-HHZNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-HHZNetwork.a"; path = "libPods-HHZNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		01E6604E063BA3E43640E601AC6D82F8 /* HHZDESEncryption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZDESEncryption.h; path = HHZUtils/encryption/HHZDESEncryption.h; sourceTree = "<group>"; };
-		076485AF8DBAF36D3E6A78A068B2EA64 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
-		112CCDB0987DEF7333B0440A1402073F /* HHZAESEncryption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZAESEncryption.m; path = HHZUtils/encryption/HHZAESEncryption.m; sourceTree = "<group>"; };
-		120998386E1EED6295D263C61C215F57 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		028439B4270DE5A03B71917270E60977 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		0331460E2A4591C4C0730DC583649C0D /* HHZConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZConfig.h; path = HHZConfigs/HHZConfig.h; sourceTree = "<group>"; };
+		056528EB08CB1504BD33E2CC5020734B /* HHZUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HHZUtils-dummy.m"; sourceTree = "<group>"; };
+		064B3E182C8511FDCD1562EF1BCDD744 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		0D306C6A118C8742BFBAA7E41EECD65E /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		12A9374C39A6EFA90AD3F2E64799ECC5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
-		17255A1593180B3925ED600DB38BCCBF /* HHZKitTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZKitTool.m; path = HHZUtils/kit/HHZKitTool.m; sourceTree = "<group>"; };
-		1A6DA663A6A5C95C285E8C0528B419DE /* HHZBase64Encrption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZBase64Encrption.h; path = HHZUtils/encryption/HHZBase64Encrption.h; sourceTree = "<group>"; };
-		1AC09AE15C44757180B386FFFFC2A8EA /* HHZJSONTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZJSONTool.m; path = HHZUtils/json/HHZJSONTool.m; sourceTree = "<group>"; };
-		1AF65FD9A17E2EE0A247FB705BDFC99C /* HHZBase64Encrption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZBase64Encrption.m; path = HHZUtils/encryption/HHZBase64Encrption.m; sourceTree = "<group>"; };
-		1B9BAC0E0C5C58D44A33F7B28A662D3B /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
-		23A813BE6B93C3F137F8C257B5CB3F73 /* HHZDateToolFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZDateToolFactory.h; path = HHZUtils/date/HHZDateToolFactory.h; sourceTree = "<group>"; };
-		247EBC6543511D6B9A3649966C867911 /* HHZMethodException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZMethodException.h; path = HHZUtils/exception/HHZMethodException.h; sourceTree = "<group>"; };
-		2880C63E491CD62E9B86D6CC68366D50 /* HHZPathTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZPathTool.m; path = HHZUtils/kit/HHZPathTool.m; sourceTree = "<group>"; };
-		2882C9267B1D2402DA48152985CAF352 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
-		2D59744C7EC96EFEC5658A165D75E5B0 /* HHZReachabilityTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZReachabilityTool.m; path = HHZUtils/http/HHZReachabilityTool.m; sourceTree = "<group>"; };
-		30F19135807B4400E74BA2FD90B02366 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
-		336E9B5AC8A25AFFE065E12BF07C6ED1 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
-		35A4C7710B0D8671D7717A857607BDA7 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
-		38713BBA4C03982ECAF958D70CCF73C2 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		3B574B658F16887219BBC7B4BAD083EC /* HHZFileHashTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZFileHashTool.h; path = HHZUtils/file/HHZFileHashTool.h; sourceTree = "<group>"; };
-		3EF731FF4266EAAD5973045F385B7E5C /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		43D7BDFF93CA17120D33007EC7B76971 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
-		4662CD16E355A2AF9C64C2DF06A530F0 /* HHZNumericalTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZNumericalTool.m; path = HHZUtils/numerical/HHZNumericalTool.m; sourceTree = "<group>"; };
-		48D8A0EC2273A6122F6F3EC19A7D80AE /* HHZRegularTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZRegularTool.h; path = HHZUtils/regular/HHZRegularTool.h; sourceTree = "<group>"; };
-		49A3ECB24390C0F02F37E42F3E3D828F /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
-		5193CA148352C7BBD90A9A77AEB5C091 /* HHZRegularTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZRegularTool.m; path = HHZUtils/regular/HHZRegularTool.m; sourceTree = "<group>"; };
-		5478FC402F81C640BF50208D6F98DE22 /* HHZAESEncryption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZAESEncryption.h; path = HHZUtils/encryption/HHZAESEncryption.h; sourceTree = "<group>"; };
-		562D34155A009811D705EA02461E6276 /* HHZCalculateTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZCalculateTool.m; path = HHZUtils/calculate/HHZCalculateTool.m; sourceTree = "<group>"; };
-		5A9B32F1574AD83F39C46BC75EAA6CCC /* HHZMapTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZMapTool.h; path = HHZUtils/kit/HHZMapTool.h; sourceTree = "<group>"; };
-		5BA3106A088F922914A2CD7CD5DD5172 /* HHZArchiveTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZArchiveTool.h; path = HHZUtils/archive/HHZArchiveTool.h; sourceTree = "<group>"; };
-		5C115ADC04DAC81608DADDB596CAB482 /* HHZUtils.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHZUtils.xcconfig; sourceTree = "<group>"; };
-		642C804AE7FDF9AD030B784FAF21FADF /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
-		64B57508940605211D7A42D634B22012 /* HHZDateTool_Format.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZDateTool_Format.m; path = HHZUtils/date/HHZDateTool_Format.m; sourceTree = "<group>"; };
-		67153A8397B69AC9523313B3D1FA91E3 /* HHZDeviceTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZDeviceTool.h; path = HHZUtils/device/HHZDeviceTool.h; sourceTree = "<group>"; };
-		676C1AF8C48D43E10673253F7ACC9A05 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
-		68DDB6511EEFF3F45283F0666DEA9683 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
-		6E189A61D9097C8C1435211E2E4F0143 /* HHZApplicationTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZApplicationTool.m; path = HHZUtils/application/HHZApplicationTool.m; sourceTree = "<group>"; };
-		75A951E7A99E593294CA24F8EDCC54A0 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
-		768BC1C2E5838D9A5A3CD8A7D783FF81 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
-		7824CCF5A77DF4FC60CC808A5813D915 /* GTMBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMBase64.h; path = HHZUtils/encryption/GTMBase64/GTMBase64.h; sourceTree = "<group>"; };
-		793F2EFB8F59EDE8DA10B22978DB80A4 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		12D03739E2CCCB8A59154606632A52AD /* HHZBase64Encrption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZBase64Encrption.h; path = HHZUtils/encryption/HHZBase64Encrption.h; sourceTree = "<group>"; };
+		13CC9CAF8D25FB3EAFDBAF205D6ADCDE /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		1466FA1E1D81068F7756E8D4A6FB0779 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		18053C7B52B1CE4E21A2084C0A2D9346 /* HHZEncrptionFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZEncrptionFactory.m; path = HHZUtils/encryption/HHZEncrptionFactory.m; sourceTree = "<group>"; };
+		18A00C6C7C47BE8255651E357A1B30EF /* HHZRegularTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZRegularTool.h; path = HHZUtils/regular/HHZRegularTool.h; sourceTree = "<group>"; };
+		19CBE85E253151C1FAD6A65F4DCCDD67 /* HHZThreadSafeDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZThreadSafeDictionary.m; path = HHZUtils/system/HHZThreadSafeDictionary.m; sourceTree = "<group>"; };
+		1C7184A17125C354C1B02A3EF1927DB6 /* HHZApplicationTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZApplicationTool.m; path = HHZUtils/application/HHZApplicationTool.m; sourceTree = "<group>"; };
+		29BD9715D9E2E68FD46E83BB13B32FBC /* HHZFileHashTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZFileHashTool.m; path = HHZUtils/file/HHZFileHashTool.m; sourceTree = "<group>"; };
+		2AF942D6F80D309035EA2B7DDF376240 /* HHZMD5Encryption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZMD5Encryption.m; path = HHZUtils/encryption/HHZMD5Encryption.m; sourceTree = "<group>"; };
+		3461B648298A64D88A741AB2656167B4 /* HHZDateTool_Format.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZDateTool_Format.m; path = HHZUtils/date/HHZDateTool_Format.m; sourceTree = "<group>"; };
+		34A246703E44F6985080F0E50F5F724F /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = HHZUtils/encryption/GTMBase64/GTMDefines.h; sourceTree = "<group>"; };
+		37216AF3FC56EAF00D5D933A37181554 /* HHZArchiveTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZArchiveTool.m; path = HHZUtils/archive/HHZArchiveTool.m; sourceTree = "<group>"; };
+		38A130B95D0EB267E93843A8B3F60693 /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		39E36A5877DA70667F13FAA342CFA510 /* HHZThreadSafeArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZThreadSafeArray.h; path = HHZUtils/system/HHZThreadSafeArray.h; sourceTree = "<group>"; };
+		3A079A3834B8CC9F40FEFD4BBF1C8F36 /* HHZNumericalTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZNumericalTool.m; path = HHZUtils/numerical/HHZNumericalTool.m; sourceTree = "<group>"; };
+		3BAA65A1AC77BC222DE1BE9FE809E786 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		3CF925D3EE80FF1049B30A3F75B00E72 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		3D59A0F51DE098D233EC337B168073C8 /* HHZReachabilityTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZReachabilityTool.h; path = HHZUtils/http/HHZReachabilityTool.h; sourceTree = "<group>"; };
+		4055B846FCE8AA81C7538762FB597232 /* HHZCookieGenerateUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZCookieGenerateUtil.h; path = HHZUtils/cookie/HHZCookieGenerateUtil.h; sourceTree = "<group>"; };
+		4CEA731B06FC7C658DA330CC33D2B601 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		4D77108D34453C72D690B560CA20C250 /* HHZDateTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZDateTool.h; path = HHZUtils/date/HHZDateTool.h; sourceTree = "<group>"; };
+		4E03455FED2ABB97591BA61A5C430993 /* HHZCookieGenerateUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZCookieGenerateUtil.m; path = HHZUtils/cookie/HHZCookieGenerateUtil.m; sourceTree = "<group>"; };
+		51206F2A3EFB7FD663DBDDA85C9C04BE /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		531D2EF27B1F7461A8D46278C0571C7C /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		536A4C2E126CD85D71ED067F6021411E /* HHZArchiveTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZArchiveTool.h; path = HHZUtils/archive/HHZArchiveTool.h; sourceTree = "<group>"; };
+		57450F878E5623F299F14D18097906D6 /* HHZPathTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZPathTool.m; path = HHZUtils/kit/HHZPathTool.m; sourceTree = "<group>"; };
+		588E7B13E2776504D128406C807887C4 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		684B7F1C4CD22D2A6BC9D5900AFFB60E /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		687E76412D9F58BEBC6948F72C786B8E /* HHZMethodException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZMethodException.m; path = HHZUtils/exception/HHZMethodException.m; sourceTree = "<group>"; };
+		758F74C1C88EE95C5A94F8CF8EBE4285 /* HHZCalculateTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZCalculateTool.m; path = HHZUtils/calculate/HHZCalculateTool.m; sourceTree = "<group>"; };
+		769480EC74004924A209249EEA1A3245 /* HHZEncrptionFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZEncrptionFactory.h; path = HHZUtils/encryption/HHZEncrptionFactory.h; sourceTree = "<group>"; };
+		7728530E1FFAFD2DD2F4208DCC9CF77A /* HHZMD5Encryption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZMD5Encryption.h; path = HHZUtils/encryption/HHZMD5Encryption.h; sourceTree = "<group>"; };
+		77A87C91425805AF2C9470FF6C077E6A /* HHZCalculateTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZCalculateTool.h; path = HHZUtils/calculate/HHZCalculateTool.h; sourceTree = "<group>"; };
+		7CD4DF0C9D5CADE4D25D2F25A4E7DF61 /* HHZDESEncryption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZDESEncryption.h; path = HHZUtils/encryption/HHZDESEncryption.h; sourceTree = "<group>"; };
 		80D000A054DE479DDAC8E8A5888E9B43 /* Pods-HHZNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHZNetwork.release.xcconfig"; sourceTree = "<group>"; };
-		823BEA0E4AB57EBCE8926DCAD4C70A6C /* HHZCookieGenerateUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZCookieGenerateUtil.m; path = HHZUtils/cookie/HHZCookieGenerateUtil.m; sourceTree = "<group>"; };
-		8582DECCFF90F34DB1A6709811018C39 /* HHZMD5Encryption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZMD5Encryption.h; path = HHZUtils/encryption/HHZMD5Encryption.h; sourceTree = "<group>"; };
-		86A47AB66EB2C2A4DD2635A955A0E94E /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
-		86EBF52FD44807C986319E06E5CD8425 /* HHZJSONTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZJSONTool.h; path = HHZUtils/json/HHZJSONTool.h; sourceTree = "<group>"; };
-		86ED8A3D1AC96D49973AEA013F40021B /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
-		8ABE8C7A61126DFD0149C32778AC9943 /* HHZPathTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZPathTool.h; path = HHZUtils/kit/HHZPathTool.h; sourceTree = "<group>"; };
-		8C50D7AAC19AD91E2E3A1FFAEEF6B618 /* HHZThreadSafeDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZThreadSafeDictionary.h; path = HHZUtils/system/HHZThreadSafeDictionary.h; sourceTree = "<group>"; };
-		8CB35549B8878550FDB6B052879C9484 /* HHZCalculateTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZCalculateTool.h; path = HHZUtils/calculate/HHZCalculateTool.h; sourceTree = "<group>"; };
-		9091ADD2673A562BD0300839324B59DF /* HHZFileHashTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZFileHashTool.m; path = HHZUtils/file/HHZFileHashTool.m; sourceTree = "<group>"; };
+		8197589FAC194B7E9F4DF7CAEE8FF785 /* HHZNumericalTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZNumericalTool.h; path = HHZUtils/numerical/HHZNumericalTool.h; sourceTree = "<group>"; };
+		81CB232320AD429CFD0D55F6B631ED68 /* HHZUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHZUtils-prefix.pch"; sourceTree = "<group>"; };
+		8276144F0CD269BD1257EDC23E51F02F /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		849CE21EFFF7C4EA996A4B98FA34DBEF /* HHZJSONTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZJSONTool.m; path = HHZUtils/json/HHZJSONTool.m; sourceTree = "<group>"; };
+		853A4C9AFB0435A24D01697F38DDB687 /* HHZAESEncryption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZAESEncryption.m; path = HHZUtils/encryption/HHZAESEncryption.m; sourceTree = "<group>"; };
+		88D15D55BC49E9FF95C7F740CEB582C8 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		894F838F6E986C63A29CE88DC6A8A50A /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
+		8E3120DBA65368745DF6A39CCB1FED96 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		91B5BC539C14D4E5CEAC454B7A9F6BDD /* GTMBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMBase64.m; path = HHZUtils/encryption/GTMBase64/GTMBase64.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93DA70630DFEB9F4F69871611DB38F34 /* HHZKitTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZKitTool.h; path = HHZUtils/kit/HHZKitTool.h; sourceTree = "<group>"; };
-		94EB89FA6DECD97AA7110F70CFC7170D /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
-		95C83EFF8915ED8E7C9CC2B2B07C16DF /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
-		977EEC715D76ABF3E8D2E0A8DB8B7392 /* GTMBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GTMBase64.m; path = HHZUtils/encryption/GTMBase64/GTMBase64.m; sourceTree = "<group>"; };
-		987E546780CF84DF3BF200548C237F2D /* HHZMethodException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZMethodException.m; path = HHZUtils/exception/HHZMethodException.m; sourceTree = "<group>"; };
-		98F36C4DB992987A097459FD0AA4CF29 /* HHZThreadSafeArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZThreadSafeArray.h; path = HHZUtils/system/HHZThreadSafeArray.h; sourceTree = "<group>"; };
-		9B40329EE3B421FCD1764311F0A34BED /* HHZDeviceTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZDeviceTool.m; path = HHZUtils/device/HHZDeviceTool.m; sourceTree = "<group>"; };
-		9E66FDFFCE2455531DD78834F9747973 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMDefines.h; path = HHZUtils/encryption/GTMBase64/GTMDefines.h; sourceTree = "<group>"; };
+		943246A6FD311002EC412AABC7D7C920 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		952033D8411ADCB2032BD9586BCB9579 /* HHZDateToolFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZDateToolFactory.m; path = HHZUtils/date/HHZDateToolFactory.m; sourceTree = "<group>"; };
+		956EC9FC30AA274891552792312645BB /* HHZKitTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZKitTool.m; path = HHZUtils/kit/HHZKitTool.m; sourceTree = "<group>"; };
+		9697EB3F18182A4D68366E1F89F7AA01 /* HHZDESEncryption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZDESEncryption.m; path = HHZUtils/encryption/HHZDESEncryption.m; sourceTree = "<group>"; };
+		9A2580F2E21144F4E7120E8548C81DB0 /* HHZKitTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZKitTool.h; path = HHZUtils/kit/HHZKitTool.h; sourceTree = "<group>"; };
+		9B5613A2491604411BA49377EE81DE0D /* HHZFileHashTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZFileHashTool.h; path = HHZUtils/file/HHZFileHashTool.h; sourceTree = "<group>"; };
+		9C482AB5C749124D61C84595E4D8C10A /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		9EF4A4F7FCB4FF6E322CA8D0B109590D /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
 		9F055D333119FC75B64A9735C22BF4DC /* libHHZUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libHHZUtils.a; path = libHHZUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A212481B03356C6154A7ECE7CB6D0EC1 /* Pods-HHZNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHZNetwork.debug.xcconfig"; sourceTree = "<group>"; };
-		A21D1BE45D5264C9AD8793E37922AEF4 /* HHZThreadSafeDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZThreadSafeDictionary.m; path = HHZUtils/system/HHZThreadSafeDictionary.m; sourceTree = "<group>"; };
-		A5126F50C692CA4C2C664C503EFF276D /* HHZDateTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZDateTool.m; path = HHZUtils/date/HHZDateTool.m; sourceTree = "<group>"; };
+		A47279185588526C428AD32474B8FE7F /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
 		A64716173FC0305057230E14CDCC7A77 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		A7970F9BD7F9A87BFA3C946477BE7CED /* HHZNumericalTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZNumericalTool.h; path = HHZUtils/numerical/HHZNumericalTool.h; sourceTree = "<group>"; };
-		AA471F65CD8542C5A16064CDFCDF5265 /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
-		AAF5D1FD2763B3319C72B808630FC2EF /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		A999DC51653FB416F5C0088E814A7E11 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		ABD3FF25AA0F667988D7B0194C6ABC1F /* HHZReachabilityTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZReachabilityTool.m; path = HHZUtils/http/HHZReachabilityTool.m; sourceTree = "<group>"; };
 		AD6F807D1C4162BFB961F631EE6406F8 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAFNetworking.a; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1B0313769A0509C7C32EC18B01A678B /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
-		B3A2F2B513F2FBFB98DD4D0B0F7B3811 /* HHZReachabilityTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZReachabilityTool.h; path = HHZUtils/http/HHZReachabilityTool.h; sourceTree = "<group>"; };
+		B235907B66A7594CFDD03B09FEC161B3 /* HHZRegularTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZRegularTool.m; path = HHZUtils/regular/HHZRegularTool.m; sourceTree = "<group>"; };
+		B3D3D58E4DF9E736B82D4801136D8F3B /* HHZBase64Encrption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZBase64Encrption.m; path = HHZUtils/encryption/HHZBase64Encrption.m; sourceTree = "<group>"; };
 		B614DB6EC90699239118C4645E5A14B4 /* Pods-HHZNetwork-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HHZNetwork-dummy.m"; sourceTree = "<group>"; };
-		B67353769E64F67680790105E71EE135 /* HHZEncrptionFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZEncrptionFactory.h; path = HHZUtils/encryption/HHZEncrptionFactory.h; sourceTree = "<group>"; };
-		B88FE2BDF52AA961EBAA0EFF2327BD7D /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
-		B9BEC420FB1E2C09A8EDCDB40BE20DB5 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		B666679F491838177318DD2700ADCBCE /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
 		B9FDBCCB266ACFED93E55656FD8A014C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
-		BB1A234BEE700FD28A6CA4C5E7E7A3FD /* HHZDateToolFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZDateToolFactory.m; path = HHZUtils/date/HHZDateToolFactory.m; sourceTree = "<group>"; };
-		BC033CB4DCDC02FEF222BA6DD3FABCAA /* HHZDateTool_Format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZDateTool_Format.h; path = HHZUtils/date/HHZDateTool_Format.h; sourceTree = "<group>"; };
-		BEAAE1F1B9CCC3D6B7FD9B51FC5446AC /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
-		C1901F1196884BF8027D80F065B0728B /* HHZUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHZUtils-prefix.pch"; sourceTree = "<group>"; };
-		C1E22644EE2B5D4162F8632CA2707023 /* HHZUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HHZUtils-dummy.m"; sourceTree = "<group>"; };
-		C26CD1B53404353305CA01700AB84627 /* HHZDESEncryption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZDESEncryption.m; path = HHZUtils/encryption/HHZDESEncryption.m; sourceTree = "<group>"; };
-		C5944D29E723ABBD060CF6656FCEED32 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
-		C833287B3A9EAD1E051F8C2EFB905087 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
-		C913DD3578F25FE67AB74E6BDECD6AC9 /* HHZArchiveTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZArchiveTool.m; path = HHZUtils/archive/HHZArchiveTool.m; sourceTree = "<group>"; };
-		CA5DDA6E1CB5414508F75074286FC30E /* HHZEncrptionFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZEncrptionFactory.m; path = HHZUtils/encryption/HHZEncrptionFactory.m; sourceTree = "<group>"; };
+		BADCCFBE3D39C652B4E0C2719070399C /* HHZMapTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZMapTool.m; path = HHZUtils/kit/HHZMapTool.m; sourceTree = "<group>"; };
+		BBC5073DA9C6A04A9CE8DDE3F880F2D2 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		BC191499EFD58681D5D3F54F187FCA0E /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		BCDA431E046EAB8EB682D1168FB83CD0 /* HHZDateTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZDateTool.m; path = HHZUtils/date/HHZDateTool.m; sourceTree = "<group>"; };
+		BE8AFBAED4EB8DECC381608E527BEEA1 /* HHZPathTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZPathTool.h; path = HHZUtils/kit/HHZPathTool.h; sourceTree = "<group>"; };
+		BF54984ADC6F07EFD6F94D0797A43C86 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		C211157BC63D9BB03CA7E41B77F80AE9 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		C5EAFE76518237CF6CDB0C1E6564A474 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		C70AFEF1437C52791A736022AF8A5543 /* GTMBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GTMBase64.h; path = HHZUtils/encryption/GTMBase64/GTMBase64.h; sourceTree = "<group>"; };
+		CA82F36844AC41B0C139CB22C8D9E7AE /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
 		CBC7404DCE18D28E1E4DEA867EBB21C2 /* Pods-HHZNetwork-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HHZNetwork-frameworks.sh"; sourceTree = "<group>"; };
-		CBD32A95F99463656E489F44556440D8 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
-		D1B3DF12027C7C350B1E2DE9A94AA5C9 /* HHZCookieGenerateUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZCookieGenerateUtil.h; path = HHZUtils/cookie/HHZCookieGenerateUtil.h; sourceTree = "<group>"; };
-		D3F76FE35885E08CF3ABD7DF39E27D97 /* HHZDateTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZDateTool.h; path = HHZUtils/date/HHZDateTool.h; sourceTree = "<group>"; };
+		CC7DD5DE4C7D8F21BC5E8E00949CD9D5 /* HHZUtils.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHZUtils.xcconfig; sourceTree = "<group>"; };
+		D55DFF7366B8E6E6BABB39DCAAFE6CC6 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
 		D58882FCA46BF52A9F584CA40C8DB5A5 /* Pods-HHZNetwork-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HHZNetwork-resources.sh"; sourceTree = "<group>"; };
-		DABBE623F9254AF03EC1C053ECB26B70 /* HHZPlistTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZPlistTool.h; path = HHZUtils/plist/HHZPlistTool.h; sourceTree = "<group>"; };
-		DC87684B5FD7FD422ACBD9E8AA706DCC /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
-		DCC9D659B6B55A2431A29B63CD128BDC /* HHZMD5Encryption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZMD5Encryption.m; path = HHZUtils/encryption/HHZMD5Encryption.m; sourceTree = "<group>"; };
-		E204122386ED2EECD74C7CCC08910456 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
-		E23A51FC2A9131FE1438227AEAB73D71 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		D5EA89E57AB33E38D877A90254DAA3F9 /* HHZApplicationTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZApplicationTool.h; path = HHZUtils/application/HHZApplicationTool.h; sourceTree = "<group>"; };
+		D7543577897CFEFCCB569C1D4398EE17 /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		D92F609115B48962ED8A8FF9345E57DE /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		DCC8E63E6D69F37916908F060CCE7416 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		DD30800E40E9836FB3D97170BA7AA309 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		DE4BB73CB7066EA0A33A3F3F07FC6028 /* HHZThreadSafeArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZThreadSafeArray.m; path = HHZUtils/system/HHZThreadSafeArray.m; sourceTree = "<group>"; };
+		E065C840B549646526C9E94F88FDEFCE /* HHZDateTool_Format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZDateTool_Format.h; path = HHZUtils/date/HHZDateTool_Format.h; sourceTree = "<group>"; };
+		E75B063F899C62CBE909C0897D0BEF68 /* HHZDateToolFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZDateToolFactory.h; path = HHZUtils/date/HHZDateToolFactory.h; sourceTree = "<group>"; };
 		E9C46AB0E38F046EB8F85D6A2D3BE7B6 /* Pods-HHZNetwork-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HHZNetwork-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EAE7506802D0E0D2F01EC0B1274DD675 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		EA991F9642C3F750FCC98749E767D002 /* HHZPlistTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZPlistTool.h; path = HHZUtils/plist/HHZPlistTool.h; sourceTree = "<group>"; };
+		EBCA949D33D9C42517631C3E85E7EA2E /* HHZAESEncryption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZAESEncryption.h; path = HHZUtils/encryption/HHZAESEncryption.h; sourceTree = "<group>"; };
 		EC8A7C0B6179467051ED95E59DB2AF9F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		F1F2A0658BB715176165E46628B48E75 /* HHZPlistTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZPlistTool.m; path = HHZUtils/plist/HHZPlistTool.m; sourceTree = "<group>"; };
-		F4389C7254BA53F32784289441583E81 /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
-		F62956BD3C69B485FAB20F96FDDC2E23 /* HHZThreadSafeArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZThreadSafeArray.m; path = HHZUtils/system/HHZThreadSafeArray.m; sourceTree = "<group>"; };
-		F7F27561E2672AED4727C5C7F32F3EED /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
-		F8A8CCC1C89372944E1DD9471512C3F4 /* HHZMapTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZMapTool.m; path = HHZUtils/kit/HHZMapTool.m; sourceTree = "<group>"; };
+		F029CFEC131A73999E5F51A6FB0A4F98 /* HHZThreadSafeDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZThreadSafeDictionary.h; path = HHZUtils/system/HHZThreadSafeDictionary.h; sourceTree = "<group>"; };
+		F0F468A2BB139B9A6159082F30E5DF1C /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		F59E19BD747EBF97819F15E6319EA884 /* HHZMapTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZMapTool.h; path = HHZUtils/kit/HHZMapTool.h; sourceTree = "<group>"; };
+		F86D8F566B47C15EB923B3C9910E4D19 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
 		F921D275AC6AA48C031BF91FD4592584 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		FAF96613335188FC0838E590B3C62B8E /* Pods-HHZNetwork-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHZNetwork-acknowledgements.plist"; sourceTree = "<group>"; };
+		FCB8346BACDF2631D95A06BE750F404F /* HHZPlistTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZPlistTool.m; path = HHZUtils/plist/HHZPlistTool.m; sourceTree = "<group>"; };
+		FD53E717EAA3B47821770C0C01E3E46A /* HHZMethodException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZMethodException.h; path = HHZUtils/exception/HHZMethodException.h; sourceTree = "<group>"; };
+		FE735E17191B0FB26CBEA57E89A8E01F /* HHZDeviceTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HHZDeviceTool.m; path = HHZUtils/device/HHZDeviceTool.m; sourceTree = "<group>"; };
+		FF7EAC581DAB33A2EF8B3A6DCDE0DCFB /* HHZDeviceTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HHZDeviceTool.h; path = HHZUtils/device/HHZDeviceTool.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +266,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0221485589311F1F423FBB2F91BBB1F6 /* exception */ = {
+			isa = PBXGroup;
+			children = (
+				FD53E717EAA3B47821770C0C01E3E46A /* HHZMethodException.h */,
+				687E76412D9F58BEBC6948F72C786B8E /* HHZMethodException.m */,
+			);
+			name = exception;
+			sourceTree = "<group>";
+		};
+		05017CCD33EF65615CD6CE9DA6B03AD8 /* archive */ = {
+			isa = PBXGroup;
+			children = (
+				536A4C2E126CD85D71ED067F6021411E /* HHZArchiveTool.h */,
+				37216AF3FC56EAF00D5D933A37181554 /* HHZArchiveTool.m */,
+			);
+			name = archive;
+			sourceTree = "<group>";
+		};
+		0837284E4E053386BD7D67DB65850756 /* cookie */ = {
+			isa = PBXGroup;
+			children = (
+				4055B846FCE8AA81C7538762FB597232 /* HHZCookieGenerateUtil.h */,
+				4E03455FED2ABB97591BA61A5C430993 /* HHZCookieGenerateUtil.m */,
+			);
+			name = cookie;
+			sourceTree = "<group>";
+		};
+		17EC5A370C8A728DE2E2C8A96E64363A /* HHZConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				0331460E2A4591C4C0730DC583649C0D /* HHZConfig.h */,
+			);
+			name = HHZConfigs;
+			path = HHZConfigs;
+			sourceTree = "<group>";
+		};
 		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -273,61 +310,83 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		231125629A6E89CF22213A770CA1AE7E /* GTMBase64 */ = {
+		27614CD0D04190CF49F494933B4682F1 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
-				7824CCF5A77DF4FC60CC808A5813D915 /* GTMBase64.h */,
-				977EEC715D76ABF3E8D2E0A8DB8B7392 /* GTMBase64.m */,
-				9E66FDFFCE2455531DD78834F9747973 /* GTMDefines.h */,
+				D55DFF7366B8E6E6BABB39DCAAFE6CC6 /* AFNetworking.h */,
+				9873811420809CAB4D214993527805E4 /* NSURLSession */,
+				A1FB439DFA1E0207FE64A7C03CF24B26 /* Reachability */,
+				98BE6ADB237A215CD6D3E2A46AFCB497 /* Security */,
+				9BB8A73F1A3CE4A290716DB9FB76BFBF /* Serialization */,
+				82F7F54B8775D4FD625033C917613BCF /* Support Files */,
+				CC33EBB1F1E435904E74131897A49CC0 /* UIKit */,
+			);
+			name = AFNetworking;
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		357B31AEA385A6148858E1E04FF4917A /* GTMBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				C70AFEF1437C52791A736022AF8A5543 /* GTMBase64.h */,
+				91B5BC539C14D4E5CEAC454B7A9F6BDD /* GTMBase64.m */,
+				34A246703E44F6985080F0E50F5F724F /* GTMDefines.h */,
 			);
 			name = GTMBase64;
 			sourceTree = "<group>";
 		};
-		2AFBB0AAA8009767068BA77C693B179D /* Reachability */ = {
+		42B9DD50D99CE89FBB3D935055E75E38 /* json */ = {
 			isa = PBXGroup;
 			children = (
-				86ED8A3D1AC96D49973AEA013F40021B /* AFNetworkReachabilityManager.h */,
-				676C1AF8C48D43E10673253F7ACC9A05 /* AFNetworkReachabilityManager.m */,
+				009346C10989439D39E00949F8983F72 /* HHZJSONTool.h */,
+				849CE21EFFF7C4EA996A4B98FA34DBEF /* HHZJSONTool.m */,
 			);
-			name = Reachability;
+			name = json;
 			sourceTree = "<group>";
 		};
-		3C0BEA886FA789ACD06B05D4004542DF /* Support Files */ = {
+		529E3D54088AB809D77BBDDAC3B2F5E3 /* file */ = {
 			isa = PBXGroup;
 			children = (
-				86A47AB66EB2C2A4DD2635A955A0E94E /* AFNetworking.xcconfig */,
-				F4389C7254BA53F32784289441583E81 /* AFNetworking-dummy.m */,
-				E204122386ED2EECD74C7CCC08910456 /* AFNetworking-prefix.pch */,
+				9B5613A2491604411BA49377EE81DE0D /* HHZFileHashTool.h */,
+				29BD9715D9E2E68FD46E83BB13B32FBC /* HHZFileHashTool.m */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/AFNetworking";
+			name = file;
 			sourceTree = "<group>";
 		};
-		3EE383B977CE74B00E207DEE20E4753C /* Pods */ = {
+		5E08314A2E442523D540801E58BABB0F /* date */ = {
 			isa = PBXGroup;
 			children = (
-				6A1661FFEA9FBACC35AB138F48B58085 /* AFNetworking */,
-				9C90D93DBE36DC6B93B1A2B01A90E294 /* HHZUtils */,
+				4D77108D34453C72D690B560CA20C250 /* HHZDateTool.h */,
+				BCDA431E046EAB8EB682D1168FB83CD0 /* HHZDateTool.m */,
+				E065C840B549646526C9E94F88FDEFCE /* HHZDateTool_Format.h */,
+				3461B648298A64D88A741AB2656167B4 /* HHZDateTool_Format.m */,
+				E75B063F899C62CBE909C0897D0BEF68 /* HHZDateToolFactory.h */,
+				952033D8411ADCB2032BD9586BCB9579 /* HHZDateToolFactory.m */,
+			);
+			name = date;
+			sourceTree = "<group>";
+		};
+		60CBBF3FE74326E7CF9C78CA3ACE5796 /* kit */ = {
+			isa = PBXGroup;
+			children = (
+				9A2580F2E21144F4E7120E8548C81DB0 /* HHZKitTool.h */,
+				956EC9FC30AA274891552792312645BB /* HHZKitTool.m */,
+				F59E19BD747EBF97819F15E6319EA884 /* HHZMapTool.h */,
+				BADCCFBE3D39C652B4E0C2719070399C /* HHZMapTool.m */,
+				BE8AFBAED4EB8DECC381608E527BEEA1 /* HHZPathTool.h */,
+				57450F878E5623F299F14D18097906D6 /* HHZPathTool.m */,
+			);
+			name = kit;
+			sourceTree = "<group>";
+		};
+		62910382D4A955386AA224C316C7C3EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27614CD0D04190CF49F494933B4682F1 /* AFNetworking */,
+				17EC5A370C8A728DE2E2C8A96E64363A /* HHZConfigs */,
+				ACDB15265925A03760D78EC58AEA4ECF /* HHZUtils */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		43F1FA130169AA0576E74631C8675353 /* application */ = {
-			isa = PBXGroup;
-			children = (
-				0037FAB0B59FDEDFD1F0682B60BC08BF /* HHZApplicationTool.h */,
-				6E189A61D9097C8C1435211E2E4F0143 /* HHZApplicationTool.m */,
-			);
-			name = application;
-			sourceTree = "<group>";
-		};
-		56489195BA5C9CF7AA5452E4BBCA9518 /* plist */ = {
-			isa = PBXGroup;
-			children = (
-				DABBE623F9254AF03EC1C053ECB26B70 /* HHZPlistTool.h */,
-				F1F2A0658BB715176165E46628B48E75 /* HHZPlistTool.m */,
-			);
-			name = plist;
 			sourceTree = "<group>";
 		};
 		63866A33AD71748927749F40A4417EEA /* Products */ = {
@@ -340,28 +399,33 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6A1661FFEA9FBACC35AB138F48B58085 /* AFNetworking */ = {
+		6403A841496E6FF6E43ADF4DC77D0FC6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C833287B3A9EAD1E051F8C2EFB905087 /* AFNetworking.h */,
-				E7BFF0BD78718F250810B5E0041E85CB /* NSURLSession */,
-				2AFBB0AAA8009767068BA77C693B179D /* Reachability */,
-				79957CF8E3F602185240772597C8E27F /* Security */,
-				9B3EF099ECB12A3BEE0A9DD4A5609F99 /* Serialization */,
-				3C0BEA886FA789ACD06B05D4004542DF /* Support Files */,
-				95C64D187B2098D2993B7E2B20545DB6 /* UIKit */,
+				CC7DD5DE4C7D8F21BC5E8E00949CD9D5 /* HHZUtils.xcconfig */,
+				056528EB08CB1504BD33E2CC5020734B /* HHZUtils-dummy.m */,
+				81CB232320AD429CFD0D55F6B631ED68 /* HHZUtils-prefix.pch */,
 			);
-			name = AFNetworking;
-			path = AFNetworking;
+			name = "Support Files";
+			path = "../Target Support Files/HHZUtils";
 			sourceTree = "<group>";
 		};
-		79957CF8E3F602185240772597C8E27F /* Security */ = {
+		7580BEAD8C758112A6D55068A79FDF97 /* encryption */ = {
 			isa = PBXGroup;
 			children = (
-				E23A51FC2A9131FE1438227AEAB73D71 /* AFSecurityPolicy.h */,
-				CBD32A95F99463656E489F44556440D8 /* AFSecurityPolicy.m */,
+				EBCA949D33D9C42517631C3E85E7EA2E /* HHZAESEncryption.h */,
+				853A4C9AFB0435A24D01697F38DDB687 /* HHZAESEncryption.m */,
+				12D03739E2CCCB8A59154606632A52AD /* HHZBase64Encrption.h */,
+				B3D3D58E4DF9E736B82D4801136D8F3B /* HHZBase64Encrption.m */,
+				7CD4DF0C9D5CADE4D25D2F25A4E7DF61 /* HHZDESEncryption.h */,
+				9697EB3F18182A4D68366E1F89F7AA01 /* HHZDESEncryption.m */,
+				769480EC74004924A209249EEA1A3245 /* HHZEncrptionFactory.h */,
+				18053C7B52B1CE4E21A2084C0A2D9346 /* HHZEncrptionFactory.m */,
+				7728530E1FFAFD2DD2F4208DCC9CF77A /* HHZMD5Encryption.h */,
+				2AF942D6F80D309035EA2B7DDF376240 /* HHZMD5Encryption.m */,
+				357B31AEA385A6148858E1E04FF4917A /* GTMBase64 */,
 			);
-			name = Security;
+			name = encryption;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -369,32 +433,21 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
-				3EE383B977CE74B00E207DEE20E4753C /* Pods */,
+				62910382D4A955386AA224C316C7C3EA /* Pods */,
 				63866A33AD71748927749F40A4417EEA /* Products */,
 				C0D5D52FF3C2F8BC9D4A95EDAB6238E9 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		82AA9ADAE73295036223E940BD7CEB98 /* device */ = {
+		82F7F54B8775D4FD625033C917613BCF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				67153A8397B69AC9523313B3D1FA91E3 /* HHZDeviceTool.h */,
-				9B40329EE3B421FCD1764311F0A34BED /* HHZDeviceTool.m */,
+				38A130B95D0EB267E93843A8B3F60693 /* AFNetworking.xcconfig */,
+				064B3E182C8511FDCD1562EF1BCDD744 /* AFNetworking-dummy.m */,
+				BC191499EFD58681D5D3F54F187FCA0E /* AFNetworking-prefix.pch */,
 			);
-			name = device;
-			sourceTree = "<group>";
-		};
-		8722B0AA0730CCAFFC57F7A3BB40AA25 /* kit */ = {
-			isa = PBXGroup;
-			children = (
-				93DA70630DFEB9F4F69871611DB38F34 /* HHZKitTool.h */,
-				17255A1593180B3925ED600DB38BCCBF /* HHZKitTool.m */,
-				5A9B32F1574AD83F39C46BC75EAA6CCC /* HHZMapTool.h */,
-				F8A8CCC1C89372944E1DD9471512C3F4 /* HHZMapTool.m */,
-				8ABE8C7A61126DFD0149C32778AC9943 /* HHZPathTool.h */,
-				2880C63E491CD62E9B86D6CC68366D50 /* HHZPathTool.m */,
-			);
-			name = kit;
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
 			sourceTree = "<group>";
 		};
 		8F0AC6354C770A7296400034A3C6AC8B /* Pods-HHZNetwork */ = {
@@ -412,129 +465,87 @@
 			path = "Target Support Files/Pods-HHZNetwork";
 			sourceTree = "<group>";
 		};
-		91C6BCED494A0C38221859FE31128156 /* Support Files */ = {
+		9873811420809CAB4D214993527805E4 /* NSURLSession */ = {
 			isa = PBXGroup;
 			children = (
-				5C115ADC04DAC81608DADDB596CAB482 /* HHZUtils.xcconfig */,
-				C1E22644EE2B5D4162F8632CA2707023 /* HHZUtils-dummy.m */,
-				C1901F1196884BF8027D80F065B0728B /* HHZUtils-prefix.pch */,
+				C211157BC63D9BB03CA7E41B77F80AE9 /* AFHTTPSessionManager.h */,
+				3BAA65A1AC77BC222DE1BE9FE809E786 /* AFHTTPSessionManager.m */,
+				684B7F1C4CD22D2A6BC9D5900AFFB60E /* AFURLSessionManager.h */,
+				DCC8E63E6D69F37916908F060CCE7416 /* AFURLSessionManager.m */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/HHZUtils";
+			name = NSURLSession;
 			sourceTree = "<group>";
 		};
-		95C64D187B2098D2993B7E2B20545DB6 /* UIKit */ = {
+		98BE6ADB237A215CD6D3E2A46AFCB497 /* Security */ = {
 			isa = PBXGroup;
 			children = (
-				1B9BAC0E0C5C58D44A33F7B28A662D3B /* AFAutoPurgingImageCache.h */,
-				C5944D29E723ABBD060CF6656FCEED32 /* AFAutoPurgingImageCache.m */,
-				AA471F65CD8542C5A16064CDFCDF5265 /* AFImageDownloader.h */,
-				95C83EFF8915ED8E7C9CC2B2B07C16DF /* AFImageDownloader.m */,
-				336E9B5AC8A25AFFE065E12BF07C6ED1 /* AFNetworkActivityIndicatorManager.h */,
-				49A3ECB24390C0F02F37E42F3E3D828F /* AFNetworkActivityIndicatorManager.m */,
-				94EB89FA6DECD97AA7110F70CFC7170D /* UIActivityIndicatorView+AFNetworking.h */,
-				DC87684B5FD7FD422ACBD9E8AA706DCC /* UIActivityIndicatorView+AFNetworking.m */,
-				793F2EFB8F59EDE8DA10B22978DB80A4 /* UIButton+AFNetworking.h */,
-				120998386E1EED6295D263C61C215F57 /* UIButton+AFNetworking.m */,
-				076485AF8DBAF36D3E6A78A068B2EA64 /* UIImage+AFNetworking.h */,
-				3EF731FF4266EAAD5973045F385B7E5C /* UIImageView+AFNetworking.h */,
-				35A4C7710B0D8671D7717A857607BDA7 /* UIImageView+AFNetworking.m */,
-				BEAAE1F1B9CCC3D6B7FD9B51FC5446AC /* UIKit+AFNetworking.h */,
-				B1B0313769A0509C7C32EC18B01A678B /* UIProgressView+AFNetworking.h */,
-				768BC1C2E5838D9A5A3CD8A7D783FF81 /* UIProgressView+AFNetworking.m */,
-				30F19135807B4400E74BA2FD90B02366 /* UIRefreshControl+AFNetworking.h */,
-				2882C9267B1D2402DA48152985CAF352 /* UIRefreshControl+AFNetworking.m */,
-				75A951E7A99E593294CA24F8EDCC54A0 /* UIWebView+AFNetworking.h */,
-				38713BBA4C03982ECAF958D70CCF73C2 /* UIWebView+AFNetworking.m */,
+				A47279185588526C428AD32474B8FE7F /* AFSecurityPolicy.h */,
+				DD30800E40E9836FB3D97170BA7AA309 /* AFSecurityPolicy.m */,
 			);
-			name = UIKit;
+			name = Security;
 			sourceTree = "<group>";
 		};
-		9B3EF099ECB12A3BEE0A9DD4A5609F99 /* Serialization */ = {
+		9AFF67029DF906592EA51969F6B14289 /* device */ = {
 			isa = PBXGroup;
 			children = (
-				AAF5D1FD2763B3319C72B808630FC2EF /* AFURLRequestSerialization.h */,
-				68DDB6511EEFF3F45283F0666DEA9683 /* AFURLRequestSerialization.m */,
-				F7F27561E2672AED4727C5C7F32F3EED /* AFURLResponseSerialization.h */,
-				EAE7506802D0E0D2F01EC0B1274DD675 /* AFURLResponseSerialization.m */,
+				FF7EAC581DAB33A2EF8B3A6DCDE0DCFB /* HHZDeviceTool.h */,
+				FE735E17191B0FB26CBEA57E89A8E01F /* HHZDeviceTool.m */,
+			);
+			name = device;
+			sourceTree = "<group>";
+		};
+		9BB8A73F1A3CE4A290716DB9FB76BFBF /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				B666679F491838177318DD2700ADCBCE /* AFURLRequestSerialization.h */,
+				13CC9CAF8D25FB3EAFDBAF205D6ADCDE /* AFURLRequestSerialization.m */,
+				A999DC51653FB416F5C0088E814A7E11 /* AFURLResponseSerialization.h */,
+				588E7B13E2776504D128406C807887C4 /* AFURLResponseSerialization.m */,
 			);
 			name = Serialization;
 			sourceTree = "<group>";
 		};
-		9C2E1016B5CEF2167BD77EFEC4028F4A /* numerical */ = {
+		A1FB439DFA1E0207FE64A7C03CF24B26 /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
-				A7970F9BD7F9A87BFA3C946477BE7CED /* HHZNumericalTool.h */,
-				4662CD16E355A2AF9C64C2DF06A530F0 /* HHZNumericalTool.m */,
+				8E3120DBA65368745DF6A39CCB1FED96 /* AFNetworkReachabilityManager.h */,
+				4CEA731B06FC7C658DA330CC33D2B601 /* AFNetworkReachabilityManager.m */,
 			);
-			name = numerical;
+			name = Reachability;
 			sourceTree = "<group>";
 		};
-		9C90D93DBE36DC6B93B1A2B01A90E294 /* HHZUtils */ = {
+		A663A758E7D831AA5A5C9610F63CB67D /* calculate */ = {
 			isa = PBXGroup;
 			children = (
-				43F1FA130169AA0576E74631C8675353 /* application */,
-				C19A98A2F880018B1EEDE119CE869429 /* archive */,
-				E99D789908E8FCE7658582B5D204B6CD /* calculate */,
-				DB34A222640464BCBE06D7BA5D7D3957 /* cookie */,
-				A6898A5B28F0012D58FE8EADFF42D7D3 /* date */,
-				82AA9ADAE73295036223E940BD7CEB98 /* device */,
-				D66927D5A389E517D8A2629499C04FDE /* encryption */,
-				9DB172C737C77E1195CDE3DCFD389200 /* exception */,
-				C533934D1F1FC3E13E4967DB8B6AC174 /* file */,
-				EC18A09E7A17E3502024B914055D0B74 /* http */,
-				B1546187FF488ED664D03AF13A6FA2F0 /* json */,
-				8722B0AA0730CCAFFC57F7A3BB40AA25 /* kit */,
-				9C2E1016B5CEF2167BD77EFEC4028F4A /* numerical */,
-				56489195BA5C9CF7AA5452E4BBCA9518 /* plist */,
-				E1864ED166410A68C76C37BDE02E2454 /* regular */,
-				91C6BCED494A0C38221859FE31128156 /* Support Files */,
-				A634754D93FC7E6D88D1F56720AD2644 /* system */,
+				77A87C91425805AF2C9470FF6C077E6A /* HHZCalculateTool.h */,
+				758F74C1C88EE95C5A94F8CF8EBE4285 /* HHZCalculateTool.m */,
+			);
+			name = calculate;
+			sourceTree = "<group>";
+		};
+		ACDB15265925A03760D78EC58AEA4ECF /* HHZUtils */ = {
+			isa = PBXGroup;
+			children = (
+				E8A58C931E8BD595FBDB23D49DD4E6B2 /* application */,
+				05017CCD33EF65615CD6CE9DA6B03AD8 /* archive */,
+				A663A758E7D831AA5A5C9610F63CB67D /* calculate */,
+				0837284E4E053386BD7D67DB65850756 /* cookie */,
+				5E08314A2E442523D540801E58BABB0F /* date */,
+				9AFF67029DF906592EA51969F6B14289 /* device */,
+				7580BEAD8C758112A6D55068A79FDF97 /* encryption */,
+				0221485589311F1F423FBB2F91BBB1F6 /* exception */,
+				529E3D54088AB809D77BBDDAC3B2F5E3 /* file */,
+				F55BF59F7335DAA7B68FDD8F7BA2D65A /* http */,
+				42B9DD50D99CE89FBB3D935055E75E38 /* json */,
+				60CBBF3FE74326E7CF9C78CA3ACE5796 /* kit */,
+				D73C87F3410267F72A5C0BE076108962 /* numerical */,
+				E1A945F7D6EACA817D7EC34C6640D4F2 /* plist */,
+				DA4A4E6CE0D04E4BE3F9BCCCB2DCDC8C /* regular */,
+				6403A841496E6FF6E43ADF4DC77D0FC6 /* Support Files */,
+				DFA12AF82B468E68841D8833AC3A6C4C /* system */,
 			);
 			name = HHZUtils;
 			path = HHZUtils;
-			sourceTree = "<group>";
-		};
-		9DB172C737C77E1195CDE3DCFD389200 /* exception */ = {
-			isa = PBXGroup;
-			children = (
-				247EBC6543511D6B9A3649966C867911 /* HHZMethodException.h */,
-				987E546780CF84DF3BF200548C237F2D /* HHZMethodException.m */,
-			);
-			name = exception;
-			sourceTree = "<group>";
-		};
-		A634754D93FC7E6D88D1F56720AD2644 /* system */ = {
-			isa = PBXGroup;
-			children = (
-				98F36C4DB992987A097459FD0AA4CF29 /* HHZThreadSafeArray.h */,
-				F62956BD3C69B485FAB20F96FDDC2E23 /* HHZThreadSafeArray.m */,
-				8C50D7AAC19AD91E2E3A1FFAEEF6B618 /* HHZThreadSafeDictionary.h */,
-				A21D1BE45D5264C9AD8793E37922AEF4 /* HHZThreadSafeDictionary.m */,
-			);
-			name = system;
-			sourceTree = "<group>";
-		};
-		A6898A5B28F0012D58FE8EADFF42D7D3 /* date */ = {
-			isa = PBXGroup;
-			children = (
-				D3F76FE35885E08CF3ABD7DF39E27D97 /* HHZDateTool.h */,
-				A5126F50C692CA4C2C664C503EFF276D /* HHZDateTool.m */,
-				BC033CB4DCDC02FEF222BA6DD3FABCAA /* HHZDateTool_Format.h */,
-				64B57508940605211D7A42D634B22012 /* HHZDateTool_Format.m */,
-				23A813BE6B93C3F137F8C257B5CB3F73 /* HHZDateToolFactory.h */,
-				BB1A234BEE700FD28A6CA4C5E7E7A3FD /* HHZDateToolFactory.m */,
-			);
-			name = date;
-			sourceTree = "<group>";
-		};
-		B1546187FF488ED664D03AF13A6FA2F0 /* json */ = {
-			isa = PBXGroup;
-			children = (
-				86EBF52FD44807C986319E06E5CD8425 /* HHZJSONTool.h */,
-				1AC09AE15C44757180B386FFFFC2A8EA /* HHZJSONTool.m */,
-			);
-			name = json;
 			sourceTree = "<group>";
 		};
 		C0D5D52FF3C2F8BC9D4A95EDAB6238E9 /* Targets Support Files */ = {
@@ -543,24 +554,6 @@
 				8F0AC6354C770A7296400034A3C6AC8B /* Pods-HHZNetwork */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		C19A98A2F880018B1EEDE119CE869429 /* archive */ = {
-			isa = PBXGroup;
-			children = (
-				5BA3106A088F922914A2CD7CD5DD5172 /* HHZArchiveTool.h */,
-				C913DD3578F25FE67AB74E6BDECD6AC9 /* HHZArchiveTool.m */,
-			);
-			name = archive;
-			sourceTree = "<group>";
-		};
-		C533934D1F1FC3E13E4967DB8B6AC174 /* file */ = {
-			isa = PBXGroup;
-			children = (
-				3B574B658F16887219BBC7B4BAD083EC /* HHZFileHashTool.h */,
-				9091ADD2673A562BD0300839324B59DF /* HHZFileHashTool.m */,
-			);
-			name = file;
 			sourceTree = "<group>";
 		};
 		CB79318D3E8AF2183319FF8098C5AE5E /* iOS */ = {
@@ -575,67 +568,85 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D66927D5A389E517D8A2629499C04FDE /* encryption */ = {
+		CC33EBB1F1E435904E74131897A49CC0 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				5478FC402F81C640BF50208D6F98DE22 /* HHZAESEncryption.h */,
-				112CCDB0987DEF7333B0440A1402073F /* HHZAESEncryption.m */,
-				1A6DA663A6A5C95C285E8C0528B419DE /* HHZBase64Encrption.h */,
-				1AF65FD9A17E2EE0A247FB705BDFC99C /* HHZBase64Encrption.m */,
-				01E6604E063BA3E43640E601AC6D82F8 /* HHZDESEncryption.h */,
-				C26CD1B53404353305CA01700AB84627 /* HHZDESEncryption.m */,
-				B67353769E64F67680790105E71EE135 /* HHZEncrptionFactory.h */,
-				CA5DDA6E1CB5414508F75074286FC30E /* HHZEncrptionFactory.m */,
-				8582DECCFF90F34DB1A6709811018C39 /* HHZMD5Encryption.h */,
-				DCC9D659B6B55A2431A29B63CD128BDC /* HHZMD5Encryption.m */,
-				231125629A6E89CF22213A770CA1AE7E /* GTMBase64 */,
+				894F838F6E986C63A29CE88DC6A8A50A /* AFAutoPurgingImageCache.h */,
+				BF54984ADC6F07EFD6F94D0797A43C86 /* AFAutoPurgingImageCache.m */,
+				3CF925D3EE80FF1049B30A3F75B00E72 /* AFImageDownloader.h */,
+				C5EAFE76518237CF6CDB0C1E6564A474 /* AFImageDownloader.m */,
+				028439B4270DE5A03B71917270E60977 /* AFNetworkActivityIndicatorManager.h */,
+				9C482AB5C749124D61C84595E4D8C10A /* AFNetworkActivityIndicatorManager.m */,
+				F86D8F566B47C15EB923B3C9910E4D19 /* UIActivityIndicatorView+AFNetworking.h */,
+				1466FA1E1D81068F7756E8D4A6FB0779 /* UIActivityIndicatorView+AFNetworking.m */,
+				BBC5073DA9C6A04A9CE8DDE3F880F2D2 /* UIButton+AFNetworking.h */,
+				88D15D55BC49E9FF95C7F740CEB582C8 /* UIButton+AFNetworking.m */,
+				D7543577897CFEFCCB569C1D4398EE17 /* UIImage+AFNetworking.h */,
+				0D306C6A118C8742BFBAA7E41EECD65E /* UIImageView+AFNetworking.h */,
+				8276144F0CD269BD1257EDC23E51F02F /* UIImageView+AFNetworking.m */,
+				CA82F36844AC41B0C139CB22C8D9E7AE /* UIKit+AFNetworking.h */,
+				F0F468A2BB139B9A6159082F30E5DF1C /* UIProgressView+AFNetworking.h */,
+				9EF4A4F7FCB4FF6E322CA8D0B109590D /* UIProgressView+AFNetworking.m */,
+				D92F609115B48962ED8A8FF9345E57DE /* UIRefreshControl+AFNetworking.h */,
+				531D2EF27B1F7461A8D46278C0571C7C /* UIRefreshControl+AFNetworking.m */,
+				943246A6FD311002EC412AABC7D7C920 /* UIWebView+AFNetworking.h */,
+				51206F2A3EFB7FD663DBDDA85C9C04BE /* UIWebView+AFNetworking.m */,
 			);
-			name = encryption;
+			name = UIKit;
 			sourceTree = "<group>";
 		};
-		DB34A222640464BCBE06D7BA5D7D3957 /* cookie */ = {
+		D73C87F3410267F72A5C0BE076108962 /* numerical */ = {
 			isa = PBXGroup;
 			children = (
-				D1B3DF12027C7C350B1E2DE9A94AA5C9 /* HHZCookieGenerateUtil.h */,
-				823BEA0E4AB57EBCE8926DCAD4C70A6C /* HHZCookieGenerateUtil.m */,
+				8197589FAC194B7E9F4DF7CAEE8FF785 /* HHZNumericalTool.h */,
+				3A079A3834B8CC9F40FEFD4BBF1C8F36 /* HHZNumericalTool.m */,
 			);
-			name = cookie;
+			name = numerical;
 			sourceTree = "<group>";
 		};
-		E1864ED166410A68C76C37BDE02E2454 /* regular */ = {
+		DA4A4E6CE0D04E4BE3F9BCCCB2DCDC8C /* regular */ = {
 			isa = PBXGroup;
 			children = (
-				48D8A0EC2273A6122F6F3EC19A7D80AE /* HHZRegularTool.h */,
-				5193CA148352C7BBD90A9A77AEB5C091 /* HHZRegularTool.m */,
+				18A00C6C7C47BE8255651E357A1B30EF /* HHZRegularTool.h */,
+				B235907B66A7594CFDD03B09FEC161B3 /* HHZRegularTool.m */,
 			);
 			name = regular;
 			sourceTree = "<group>";
 		};
-		E7BFF0BD78718F250810B5E0041E85CB /* NSURLSession */ = {
+		DFA12AF82B468E68841D8833AC3A6C4C /* system */ = {
 			isa = PBXGroup;
 			children = (
-				642C804AE7FDF9AD030B784FAF21FADF /* AFHTTPSessionManager.h */,
-				B9BEC420FB1E2C09A8EDCDB40BE20DB5 /* AFHTTPSessionManager.m */,
-				43D7BDFF93CA17120D33007EC7B76971 /* AFURLSessionManager.h */,
-				B88FE2BDF52AA961EBAA0EFF2327BD7D /* AFURLSessionManager.m */,
+				39E36A5877DA70667F13FAA342CFA510 /* HHZThreadSafeArray.h */,
+				DE4BB73CB7066EA0A33A3F3F07FC6028 /* HHZThreadSafeArray.m */,
+				F029CFEC131A73999E5F51A6FB0A4F98 /* HHZThreadSafeDictionary.h */,
+				19CBE85E253151C1FAD6A65F4DCCDD67 /* HHZThreadSafeDictionary.m */,
 			);
-			name = NSURLSession;
+			name = system;
 			sourceTree = "<group>";
 		};
-		E99D789908E8FCE7658582B5D204B6CD /* calculate */ = {
+		E1A945F7D6EACA817D7EC34C6640D4F2 /* plist */ = {
 			isa = PBXGroup;
 			children = (
-				8CB35549B8878550FDB6B052879C9484 /* HHZCalculateTool.h */,
-				562D34155A009811D705EA02461E6276 /* HHZCalculateTool.m */,
+				EA991F9642C3F750FCC98749E767D002 /* HHZPlistTool.h */,
+				FCB8346BACDF2631D95A06BE750F404F /* HHZPlistTool.m */,
 			);
-			name = calculate;
+			name = plist;
 			sourceTree = "<group>";
 		};
-		EC18A09E7A17E3502024B914055D0B74 /* http */ = {
+		E8A58C931E8BD595FBDB23D49DD4E6B2 /* application */ = {
 			isa = PBXGroup;
 			children = (
-				B3A2F2B513F2FBFB98DD4D0B0F7B3811 /* HHZReachabilityTool.h */,
-				2D59744C7EC96EFEC5658A165D75E5B0 /* HHZReachabilityTool.m */,
+				D5EA89E57AB33E38D877A90254DAA3F9 /* HHZApplicationTool.h */,
+				1C7184A17125C354C1B02A3EF1927DB6 /* HHZApplicationTool.m */,
+			);
+			name = application;
+			sourceTree = "<group>";
+		};
+		F55BF59F7335DAA7B68FDD8F7BA2D65A /* http */ = {
+			isa = PBXGroup;
+			children = (
+				3D59A0F51DE098D233EC337B168073C8 /* HHZReachabilityTool.h */,
+				ABD3FF25AA0F667988D7B0194C6ABC1F /* HHZReachabilityTool.m */,
 			);
 			name = http;
 			sourceTree = "<group>";
@@ -871,7 +882,7 @@
 /* Begin XCBuildConfiguration section */
 		5873357C5C727B1C9479D8E592FB3BFF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86A47AB66EB2C2A4DD2635A955A0E94E /* AFNetworking.xcconfig */;
+			baseConfigurationReference = 38A130B95D0EB267E93843A8B3F60693 /* AFNetworking.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -939,7 +950,7 @@
 		};
 		764B045AE25254C31F1F39AA447550FC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C115ADC04DAC81608DADDB596CAB482 /* HHZUtils.xcconfig */;
+			baseConfigurationReference = CC7DD5DE4C7D8F21BC5E8E00949CD9D5 /* HHZUtils.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1009,7 +1020,7 @@
 		};
 		ABD230985F0910DACEC1CD2FA2C3FD1B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C115ADC04DAC81608DADDB596CAB482 /* HHZUtils.xcconfig */;
+			baseConfigurationReference = CC7DD5DE4C7D8F21BC5E8E00949CD9D5 /* HHZUtils.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1033,7 +1044,7 @@
 		};
 		BF04D0BCCBDE290A0C03B7A376E517BD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86A47AB66EB2C2A4DD2635A955A0E94E /* AFNetworking.xcconfig */;
+			baseConfigurationReference = 38A130B95D0EB267E93843A8B3F60693 /* AFNetworking.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
