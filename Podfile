@@ -6,7 +6,6 @@ target 'HHZNetwork' do
   # use_frameworks!
   pod 'AFNetworking', '~> 3.1.0'
   pod 'HHZUtils', '~> 0.0.2'
-  pod 'HHZConfigs', '~> 0.0.1'
   # Pods for HHZNetwork
 
 end

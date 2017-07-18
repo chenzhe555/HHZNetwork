@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HHZNetwork"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "网络"
 
   # This description is used to generate tags and improve search results.
@@ -141,5 +141,4 @@ Pod::Spec.new do |s|
   # s.dependency "JSONKit", "~> 1.4"
   s.dependency "AFNetworking", "~> 3.1.0"
   s.dependency "HHZUtils", "~> 0.0.2"
-  s.dependency "HHZConfigs", "~> 0.0.1"
 end

@@ -8,7 +8,6 @@
 
 #import "DemoHttpService.h"
 #import "DemoHttpURLManager.h"
-#import <HHZConfigs/HHZConfig.h>
 
 @implementation DemoHttpService
 
