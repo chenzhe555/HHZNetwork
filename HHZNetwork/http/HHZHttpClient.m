@@ -7,7 +7,7 @@
 //
 
 #import "HHZHttpClient.h"
-
+#import <HHZConfigs/HHZConfig.h>
 
 @implementation HHZHttpClient
 +(HHZHttpResult *)sendRequest:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail beforeSend:( HHZBeforeSendRequest)beforeSend
