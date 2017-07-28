@@ -17,6 +17,7 @@
     dispatch_once(&onceToken, ^{
         manager = [[self alloc] init];
         [manager setValue:[[NSMutableDictionary alloc] init] forKey:@"urlDic"];
+        [manager loadURLs];
     });
     return manager;
 }
