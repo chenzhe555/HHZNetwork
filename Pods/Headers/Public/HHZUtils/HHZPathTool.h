@@ -1,1 +1,1 @@
-../../../HHZUtils/HHZUtils/kit/HHZPathTool.h
+../../../HHZUtils/HHZUtils/classes/kit/HHZPathTool.h

@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return
  */
-+(instancetype)shareDateFommat;
++(instancetype _Nullable)shareDateFommat;
 
 /**
  *  提供Date对象获取时间字符串

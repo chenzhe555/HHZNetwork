@@ -122,7 +122,7 @@ static void HHZReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkRe
                 CTRadioAccessTechnologyLTE : @(HHZReachabilityWWANStatus4G)}; // LTE:3.9G 150M/75M  LTE-Advanced:4G 300M/150M
     });
     NSNumber *num = dic[status];
-    if (num) return num.unsignedIntegerValue;
+    if ([num integerValue]) return [num integerValue];
     else return HHZReachabilityWWANStatusNone;
 }
 

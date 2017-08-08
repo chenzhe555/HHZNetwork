@@ -44,7 +44,7 @@
     NSData * resultData = nil;
     if (cryptStatus == kCCSuccess) {
         //the returned NSData takes ownership of the buffer and will free it on deallocation
-        resultData = [NSData dataWithBytesNoCopy:buffer length:numBytesEncrypted];
+        resultData = [NSData dataWithBytes:buffer length:numBytesEncrypted];
     }
     
     free(buffer); //free the buffer;
@@ -79,7 +79,7 @@
     NSData * resultData = nil;
     if (cryptStatus == kCCSuccess) {
         //the returned NSData takes ownership of the buffer and will free it on deallocation
-        resultData = [NSData dataWithBytesNoCopy:buffer length:numBytesDecrypted];
+        resultData = [NSData dataWithBytes:buffer length:numBytesDecrypted];
     }
     
     free(buffer); //free the buffer;

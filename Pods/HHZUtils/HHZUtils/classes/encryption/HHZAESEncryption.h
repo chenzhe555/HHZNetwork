@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 返回加密后data
  */
-+(NSData *)AES256Encrypt:(NSData *)data WithKey:(NSString *)key;
++(NSData * _Nullable)AES256Encrypt:(NSData *)data WithKey:(NSString *)key;
 
 
 
@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 返回解密后的data
  */
-+(NSData *)AES256Decrypt:(NSData *)data WithKey:(NSString *)key;
++(NSData * _Nullable)AES256Decrypt:(NSData *)data WithKey:(NSString *)key;
 
 /**
  *  AES加密(128)

@@ -7,32 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		742B81EB1F1B9ABC00C8BFDB /* DemoHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 742B81EA1F1B9ABC00C8BFDB /* DemoHttpService.m */; };
-		742B81EF1F1BC4A700C8BFDB /* DemoHttpURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 742B81EE1F1BC4A700C8BFDB /* DemoHttpURLManager.m */; };
+		6E44850A1F39997000F4D1A8 /* DemoHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4484F21F39996F00F4D1A8 /* DemoHttpService.m */; };
+		6E44850B1F39997000F4D1A8 /* DemoHttpURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4484F41F39996F00F4D1A8 /* DemoHttpURLManager.m */; };
+		6E44850C1F39997000F4D1A8 /* HHZHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4484F71F39996F00F4D1A8 /* HHZHttpClient.m */; };
+		6E44850D1F39997000F4D1A8 /* HHZHttpEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4484F91F39996F00F4D1A8 /* HHZHttpEncryption.m */; };
+		6E44850E1F39997000F4D1A8 /* HHZHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4484FC1F39996F00F4D1A8 /* HHZHttpManager.m */; };
+		6E44850F1F39997000F4D1A8 /* HHZHttpManagerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4484FE1F39996F00F4D1A8 /* HHZHttpManagerFactory.m */; };
+		6E4485101F39997000F4D1A8 /* HHZHttpRequestCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4485001F39997000F4D1A8 /* HHZHttpRequestCondition.m */; };
+		6E4485111F39997000F4D1A8 /* HHZHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4485021F39997000F4D1A8 /* HHZHttpService.m */; };
+		6E4485121F39997000F4D1A8 /* HHZHttpStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4485051F39997000F4D1A8 /* HHZHttpStruct.m */; };
+		6E4485131F39997000F4D1A8 /* HHZHttpTagBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4485071F39997000F4D1A8 /* HHZHttpTagBuilder.m */; };
+		6E4485141F39997000F4D1A8 /* HHZHttpURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4485091F39997000F4D1A8 /* HHZHttpURLManager.m */; };
 		74A3FAB71F19179400A2706A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FAB61F19179400A2706A /* main.m */; };
 		74A3FABA1F19179400A2706A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FAB91F19179400A2706A /* AppDelegate.m */; };
 		74A3FABD1F19179400A2706A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FABC1F19179400A2706A /* ViewController.m */; };
 		74A3FAC01F19179400A2706A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A3FABE1F19179400A2706A /* Main.storyboard */; };
 		74A3FAC21F19179400A2706A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74A3FAC11F19179400A2706A /* Assets.xcassets */; };
 		74A3FAC51F19179400A2706A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A3FAC31F19179400A2706A /* LaunchScreen.storyboard */; };
-		74A3FAE11F19193D00A2706A /* HHZHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FACE1F19193D00A2706A /* HHZHttpClient.m */; };
-		74A3FAE21F19193D00A2706A /* HHZHttpEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FAD01F19193D00A2706A /* HHZHttpEncryption.m */; };
-		74A3FAE31F19193D00A2706A /* HHZHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FAD31F19193D00A2706A /* HHZHttpManager.m */; };
-		74A3FAE41F19193D00A2706A /* HHZHttpManagerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FAD51F19193D00A2706A /* HHZHttpManagerFactory.m */; };
-		74A3FAE51F19193D00A2706A /* HHZHttpRequestCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FAD71F19193D00A2706A /* HHZHttpRequestCondition.m */; };
-		74A3FAE61F19193D00A2706A /* HHZHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FAD91F19193D00A2706A /* HHZHttpService.m */; };
-		74A3FAE71F19193D00A2706A /* HHZHttpStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FADC1F19193D00A2706A /* HHZHttpStruct.m */; };
-		74A3FAE81F19193D00A2706A /* HHZHttpTagBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FADE1F19193D00A2706A /* HHZHttpTagBuilder.m */; };
-		74A3FAE91F19193D00A2706A /* HHZHttpURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FAE01F19193D00A2706A /* HHZHttpURLManager.m */; };
 		A014C41C8A4EFCA7BC2A333D /* libPods-HHZNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A2687BC1B78A2B44DB89E13 /* libPods-HHZNetwork.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		742B81E91F1B9ABC00C8BFDB /* DemoHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoHttpService.h; sourceTree = "<group>"; };
-		742B81EA1F1B9ABC00C8BFDB /* DemoHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoHttpService.m; sourceTree = "<group>"; };
+		6E4484F11F39996F00F4D1A8 /* DemoHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoHttpService.h; sourceTree = "<group>"; };
+		6E4484F21F39996F00F4D1A8 /* DemoHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoHttpService.m; sourceTree = "<group>"; };
+		6E4484F31F39996F00F4D1A8 /* DemoHttpURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoHttpURLManager.h; sourceTree = "<group>"; };
+		6E4484F41F39996F00F4D1A8 /* DemoHttpURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoHttpURLManager.m; sourceTree = "<group>"; };
+		6E4484F61F39996F00F4D1A8 /* HHZHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpClient.h; sourceTree = "<group>"; };
+		6E4484F71F39996F00F4D1A8 /* HHZHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpClient.m; sourceTree = "<group>"; };
+		6E4484F81F39996F00F4D1A8 /* HHZHttpEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpEncryption.h; sourceTree = "<group>"; };
+		6E4484F91F39996F00F4D1A8 /* HHZHttpEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpEncryption.m; sourceTree = "<group>"; };
+		6E4484FA1F39996F00F4D1A8 /* HHZHttpEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpEnum.h; sourceTree = "<group>"; };
+		6E4484FB1F39996F00F4D1A8 /* HHZHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpManager.h; sourceTree = "<group>"; };
+		6E4484FC1F39996F00F4D1A8 /* HHZHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpManager.m; sourceTree = "<group>"; };
+		6E4484FD1F39996F00F4D1A8 /* HHZHttpManagerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpManagerFactory.h; sourceTree = "<group>"; };
+		6E4484FE1F39996F00F4D1A8 /* HHZHttpManagerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpManagerFactory.m; sourceTree = "<group>"; };
+		6E4484FF1F39997000F4D1A8 /* HHZHttpRequestCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpRequestCondition.h; sourceTree = "<group>"; };
+		6E4485001F39997000F4D1A8 /* HHZHttpRequestCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpRequestCondition.m; sourceTree = "<group>"; };
+		6E4485011F39997000F4D1A8 /* HHZHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpService.h; sourceTree = "<group>"; };
+		6E4485021F39997000F4D1A8 /* HHZHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpService.m; sourceTree = "<group>"; };
+		6E4485031F39997000F4D1A8 /* HHZHttpServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpServiceDelegate.h; sourceTree = "<group>"; };
+		6E4485041F39997000F4D1A8 /* HHZHttpStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpStruct.h; sourceTree = "<group>"; };
+		6E4485051F39997000F4D1A8 /* HHZHttpStruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpStruct.m; sourceTree = "<group>"; };
+		6E4485061F39997000F4D1A8 /* HHZHttpTagBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpTagBuilder.h; sourceTree = "<group>"; };
+		6E4485071F39997000F4D1A8 /* HHZHttpTagBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpTagBuilder.m; sourceTree = "<group>"; };
+		6E4485081F39997000F4D1A8 /* HHZHttpURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpURLManager.h; sourceTree = "<group>"; };
+		6E4485091F39997000F4D1A8 /* HHZHttpURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpURLManager.m; sourceTree = "<group>"; };
 		742B81EC1F1B9C1000C8BFDB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		742B81ED1F1BC4A700C8BFDB /* DemoHttpURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoHttpURLManager.h; sourceTree = "<group>"; };
-		742B81EE1F1BC4A700C8BFDB /* DemoHttpURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoHttpURLManager.m; sourceTree = "<group>"; };
 		74A3FAB21F19179400A2706A /* HHZNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHZNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A3FAB61F19179400A2706A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74A3FAB81F19179400A2706A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -43,26 +63,6 @@
 		74A3FAC11F19179400A2706A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74A3FAC41F19179400A2706A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74A3FAC61F19179400A2706A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74A3FACD1F19193D00A2706A /* HHZHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpClient.h; sourceTree = "<group>"; };
-		74A3FACE1F19193D00A2706A /* HHZHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpClient.m; sourceTree = "<group>"; };
-		74A3FACF1F19193D00A2706A /* HHZHttpEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpEncryption.h; sourceTree = "<group>"; };
-		74A3FAD01F19193D00A2706A /* HHZHttpEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpEncryption.m; sourceTree = "<group>"; };
-		74A3FAD11F19193D00A2706A /* HHZHttpEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpEnum.h; sourceTree = "<group>"; };
-		74A3FAD21F19193D00A2706A /* HHZHttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpManager.h; sourceTree = "<group>"; };
-		74A3FAD31F19193D00A2706A /* HHZHttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpManager.m; sourceTree = "<group>"; };
-		74A3FAD41F19193D00A2706A /* HHZHttpManagerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpManagerFactory.h; sourceTree = "<group>"; };
-		74A3FAD51F19193D00A2706A /* HHZHttpManagerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpManagerFactory.m; sourceTree = "<group>"; };
-		74A3FAD61F19193D00A2706A /* HHZHttpRequestCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpRequestCondition.h; sourceTree = "<group>"; };
-		74A3FAD71F19193D00A2706A /* HHZHttpRequestCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpRequestCondition.m; sourceTree = "<group>"; };
-		74A3FAD81F19193D00A2706A /* HHZHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpService.h; sourceTree = "<group>"; };
-		74A3FAD91F19193D00A2706A /* HHZHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpService.m; sourceTree = "<group>"; };
-		74A3FADA1F19193D00A2706A /* HHZHttpServiceDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpServiceDelegate.h; sourceTree = "<group>"; };
-		74A3FADB1F19193D00A2706A /* HHZHttpStruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpStruct.h; sourceTree = "<group>"; };
-		74A3FADC1F19193D00A2706A /* HHZHttpStruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpStruct.m; sourceTree = "<group>"; };
-		74A3FADD1F19193D00A2706A /* HHZHttpTagBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpTagBuilder.h; sourceTree = "<group>"; };
-		74A3FADE1F19193D00A2706A /* HHZHttpTagBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpTagBuilder.m; sourceTree = "<group>"; };
-		74A3FADF1F19193D00A2706A /* HHZHttpURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpURLManager.h; sourceTree = "<group>"; };
-		74A3FAE01F19193D00A2706A /* HHZHttpURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpURLManager.m; sourceTree = "<group>"; };
 		7A2687BC1B78A2B44DB89E13 /* libPods-HHZNetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HHZNetwork.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB4F939C938E8EDBC212F078 /* Pods-HHZNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHZNetwork.release.xcconfig"; path = "Pods/Target Support Files/Pods-HHZNetwork/Pods-HHZNetwork.release.xcconfig"; sourceTree = "<group>"; };
 		DB8E8A9602F6196B011C19CC /* Pods-HHZNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HHZNetwork.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HHZNetwork/Pods-HHZNetwork.debug.xcconfig"; sourceTree = "<group>"; };
@@ -97,15 +97,42 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		742B81E51F1B991D00C8BFDB /* Demo */ = {
+		6E4484F01F39996F00F4D1A8 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				742B81E91F1B9ABC00C8BFDB /* DemoHttpService.h */,
-				742B81EA1F1B9ABC00C8BFDB /* DemoHttpService.m */,
-				742B81ED1F1BC4A700C8BFDB /* DemoHttpURLManager.h */,
-				742B81EE1F1BC4A700C8BFDB /* DemoHttpURLManager.m */,
+				6E4484F11F39996F00F4D1A8 /* DemoHttpService.h */,
+				6E4484F21F39996F00F4D1A8 /* DemoHttpService.m */,
+				6E4484F31F39996F00F4D1A8 /* DemoHttpURLManager.h */,
+				6E4484F41F39996F00F4D1A8 /* DemoHttpURLManager.m */,
 			);
 			path = Demo;
+			sourceTree = "<group>";
+		};
+		6E4484F51F39996F00F4D1A8 /* http */ = {
+			isa = PBXGroup;
+			children = (
+				6E4484F61F39996F00F4D1A8 /* HHZHttpClient.h */,
+				6E4484F71F39996F00F4D1A8 /* HHZHttpClient.m */,
+				6E4484F81F39996F00F4D1A8 /* HHZHttpEncryption.h */,
+				6E4484F91F39996F00F4D1A8 /* HHZHttpEncryption.m */,
+				6E4484FA1F39996F00F4D1A8 /* HHZHttpEnum.h */,
+				6E4484FB1F39996F00F4D1A8 /* HHZHttpManager.h */,
+				6E4484FC1F39996F00F4D1A8 /* HHZHttpManager.m */,
+				6E4484FD1F39996F00F4D1A8 /* HHZHttpManagerFactory.h */,
+				6E4484FE1F39996F00F4D1A8 /* HHZHttpManagerFactory.m */,
+				6E4484FF1F39997000F4D1A8 /* HHZHttpRequestCondition.h */,
+				6E4485001F39997000F4D1A8 /* HHZHttpRequestCondition.m */,
+				6E4485011F39997000F4D1A8 /* HHZHttpService.h */,
+				6E4485021F39997000F4D1A8 /* HHZHttpService.m */,
+				6E4485031F39997000F4D1A8 /* HHZHttpServiceDelegate.h */,
+				6E4485041F39997000F4D1A8 /* HHZHttpStruct.h */,
+				6E4485051F39997000F4D1A8 /* HHZHttpStruct.m */,
+				6E4485061F39997000F4D1A8 /* HHZHttpTagBuilder.h */,
+				6E4485071F39997000F4D1A8 /* HHZHttpTagBuilder.m */,
+				6E4485081F39997000F4D1A8 /* HHZHttpURLManager.h */,
+				6E4485091F39997000F4D1A8 /* HHZHttpURLManager.m */,
+			);
+			path = http;
 			sourceTree = "<group>";
 		};
 		74A3FAA91F19179400A2706A = {
@@ -129,8 +156,8 @@
 		74A3FAB41F19179400A2706A /* HHZNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				742B81E51F1B991D00C8BFDB /* Demo */,
-				74A3FACC1F19193D00A2706A /* http */,
+				6E4484F01F39996F00F4D1A8 /* Demo */,
+				6E4484F51F39996F00F4D1A8 /* http */,
 				74A3FAB81F19179400A2706A /* AppDelegate.h */,
 				74A3FAB91F19179400A2706A /* AppDelegate.m */,
 				74A3FABB1F19179400A2706A /* ViewController.h */,
@@ -151,33 +178,6 @@
 				74A3FAB61F19179400A2706A /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		74A3FACC1F19193D00A2706A /* http */ = {
-			isa = PBXGroup;
-			children = (
-				74A3FACD1F19193D00A2706A /* HHZHttpClient.h */,
-				74A3FACE1F19193D00A2706A /* HHZHttpClient.m */,
-				74A3FACF1F19193D00A2706A /* HHZHttpEncryption.h */,
-				74A3FAD01F19193D00A2706A /* HHZHttpEncryption.m */,
-				74A3FAD11F19193D00A2706A /* HHZHttpEnum.h */,
-				74A3FAD21F19193D00A2706A /* HHZHttpManager.h */,
-				74A3FAD31F19193D00A2706A /* HHZHttpManager.m */,
-				74A3FAD41F19193D00A2706A /* HHZHttpManagerFactory.h */,
-				74A3FAD51F19193D00A2706A /* HHZHttpManagerFactory.m */,
-				74A3FAD61F19193D00A2706A /* HHZHttpRequestCondition.h */,
-				74A3FAD71F19193D00A2706A /* HHZHttpRequestCondition.m */,
-				74A3FAD81F19193D00A2706A /* HHZHttpService.h */,
-				74A3FAD91F19193D00A2706A /* HHZHttpService.m */,
-				74A3FADA1F19193D00A2706A /* HHZHttpServiceDelegate.h */,
-				74A3FADB1F19193D00A2706A /* HHZHttpStruct.h */,
-				74A3FADC1F19193D00A2706A /* HHZHttpStruct.m */,
-				74A3FADD1F19193D00A2706A /* HHZHttpTagBuilder.h */,
-				74A3FADE1F19193D00A2706A /* HHZHttpTagBuilder.m */,
-				74A3FADF1F19193D00A2706A /* HHZHttpURLManager.h */,
-				74A3FAE01F19193D00A2706A /* HHZHttpURLManager.m */,
-			);
-			path = http;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,13 +272,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HHZNetwork-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F6FDCC6F33DD55A4AA71507C /* [CP] Embed Pods Frameworks */ = {
@@ -303,20 +306,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E44850E1F39997000F4D1A8 /* HHZHttpManager.m in Sources */,
+				6E44850D1F39997000F4D1A8 /* HHZHttpEncryption.m in Sources */,
 				74A3FABD1F19179400A2706A /* ViewController.m in Sources */,
-				74A3FAE61F19193D00A2706A /* HHZHttpService.m in Sources */,
+				6E44850C1F39997000F4D1A8 /* HHZHttpClient.m in Sources */,
+				6E4485141F39997000F4D1A8 /* HHZHttpURLManager.m in Sources */,
 				74A3FABA1F19179400A2706A /* AppDelegate.m in Sources */,
-				74A3FAE71F19193D00A2706A /* HHZHttpStruct.m in Sources */,
-				742B81EF1F1BC4A700C8BFDB /* DemoHttpURLManager.m in Sources */,
-				74A3FAE31F19193D00A2706A /* HHZHttpManager.m in Sources */,
-				74A3FAE21F19193D00A2706A /* HHZHttpEncryption.m in Sources */,
-				74A3FAE41F19193D00A2706A /* HHZHttpManagerFactory.m in Sources */,
+				6E44850A1F39997000F4D1A8 /* DemoHttpService.m in Sources */,
 				74A3FAB71F19179400A2706A /* main.m in Sources */,
-				74A3FAE81F19193D00A2706A /* HHZHttpTagBuilder.m in Sources */,
-				74A3FAE51F19193D00A2706A /* HHZHttpRequestCondition.m in Sources */,
-				74A3FAE91F19193D00A2706A /* HHZHttpURLManager.m in Sources */,
-				742B81EB1F1B9ABC00C8BFDB /* DemoHttpService.m in Sources */,
-				74A3FAE11F19193D00A2706A /* HHZHttpClient.m in Sources */,
+				6E44850B1F39997000F4D1A8 /* DemoHttpURLManager.m in Sources */,
+				6E4485101F39997000F4D1A8 /* HHZHttpRequestCondition.m in Sources */,
+				6E4485121F39997000F4D1A8 /* HHZHttpStruct.m in Sources */,
+				6E44850F1F39997000F4D1A8 /* HHZHttpManagerFactory.m in Sources */,
+				6E4485131F39997000F4D1A8 /* HHZHttpTagBuilder.m in Sources */,
+				6E4485111F39997000F4D1A8 /* HHZHttpService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +446,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhe.HHZNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-Wno-documentation";
 			};
 			name = Debug;
 		};
@@ -457,6 +461,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhe.HHZNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WARNING_CFLAGS = "-Wno-documentation";
 			};
 			name = Release;
 		};

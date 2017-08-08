@@ -1,1 +1,1 @@
-../../../HHZUtils/HHZUtils/json/HHZJSONTool.h
+../../../HHZUtils/HHZUtils/classes/json/HHZJSONTool.h

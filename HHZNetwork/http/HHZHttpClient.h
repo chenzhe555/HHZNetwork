@@ -32,7 +32,7 @@ typedef void (^HHZFailureBlock)(HHZHttpResponse * responseObject);
  *
  *  @return 当前请求唯一的tag标识
  */
-+(HHZHttpResult *)sendRequest:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail beforeSend:(HHZBeforeSendRequest)beforeSend;
++(HHZHttpResult * _Nullable)sendRequest:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail beforeSend:(HHZBeforeSendRequest)beforeSend;
 
 
 /**

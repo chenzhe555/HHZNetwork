@@ -1,1 +1,1 @@
-../../../HHZUtils/HHZUtils/application/HHZApplicationTool.h
+../../../HHZUtils/HHZUtils/classes/application/HHZApplicationTool.h

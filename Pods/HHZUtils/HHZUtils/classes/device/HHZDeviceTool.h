@@ -54,58 +54,65 @@ NS_ASSUME_NONNULL_BEGIN
  http://theiphonewiki.com/wiki/IPhone
  http://theiphonewiki.com/wiki/IPad
  *
- *  @return
  */
 +(NSString *)getPhoneType;
 
 /**
  *  获取当前手机系统版本号
  *
- *  @return
  */
 +(NSString *)getDeviceSystemVersion;
 
 /**
  *  获取手机的UUID
  *
- *  @return
  */
 +(NSString *)getPhoneUUID;
 
 /**
  *  判断是否是IPad
  *
- *  @return
  */
 +(BOOL)isPad;
 
 /**
  *  判断是否是模拟器
  *
- *  @return 
  */
 +(BOOL)isSimulator;
 
 /**
  *  判断是否能打电话
  *
- *  @return 
  */
 +(BOOL)canMakePhoneCalls;
 
 /**
  *  Wifi的IP (WIFI IP address of this device @"192.168.1.111")
  *
- *  @return
  */
 +(nullable NSString *)IPAddressWithWifi;
 
 /**
  *  Cell的IP 对外的外网地址 (Cell IP address of this device @"10.2.2.222")
  *
- *  @return
  */
 +(nullable NSString *)IPAddressWithCell;
+
+/**
+ *  获取iPhone名称
+ */
++(NSString *)gainiPhoneName;
+
+/**
+ *  获取当前系统名称
+ */
++(NSString *)gainSystemName;
+
+/**
+ *  获取设备当前的语言
+ */
++(NSString *)gainCurrentLanguage;
 
 #pragma mark 越狱相关  查询IP导入SNFoundation
 ///**

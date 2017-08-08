@@ -14,52 +14,63 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - HHZUtils (0.0.2):
-    - HHZUtils/HHZUtils (= 0.0.2)
-  - HHZUtils/HHZUtils (0.0.2):
-    - HHZUtils/HHZUtils/application (= 0.0.2)
-    - HHZUtils/HHZUtils/archive (= 0.0.2)
-    - HHZUtils/HHZUtils/calculate (= 0.0.2)
-    - HHZUtils/HHZUtils/cookie (= 0.0.2)
-    - HHZUtils/HHZUtils/date (= 0.0.2)
-    - HHZUtils/HHZUtils/device (= 0.0.2)
-    - HHZUtils/HHZUtils/encryption (= 0.0.2)
-    - HHZUtils/HHZUtils/exception (= 0.0.2)
-    - HHZUtils/HHZUtils/file (= 0.0.2)
-    - HHZUtils/HHZUtils/http (= 0.0.2)
-    - HHZUtils/HHZUtils/json (= 0.0.2)
-    - HHZUtils/HHZUtils/kit (= 0.0.2)
-    - HHZUtils/HHZUtils/numerical (= 0.0.2)
-    - HHZUtils/HHZUtils/plist (= 0.0.2)
-    - HHZUtils/HHZUtils/regular (= 0.0.2)
-    - HHZUtils/HHZUtils/system (= 0.0.2)
-  - HHZUtils/HHZUtils/application (0.0.2)
-  - HHZUtils/HHZUtils/archive (0.0.2)
-  - HHZUtils/HHZUtils/calculate (0.0.2)
-  - HHZUtils/HHZUtils/cookie (0.0.2)
-  - HHZUtils/HHZUtils/date (0.0.2)
-  - HHZUtils/HHZUtils/device (0.0.2)
-  - HHZUtils/HHZUtils/encryption (0.0.2):
-    - HHZUtils/HHZUtils/encryption/GTMBase64 (= 0.0.2)
-  - HHZUtils/HHZUtils/encryption/GTMBase64 (0.0.2)
-  - HHZUtils/HHZUtils/exception (0.0.2)
-  - HHZUtils/HHZUtils/file (0.0.2)
-  - HHZUtils/HHZUtils/http (0.0.2)
-  - HHZUtils/HHZUtils/json (0.0.2)
-  - HHZUtils/HHZUtils/kit (0.0.2)
-  - HHZUtils/HHZUtils/numerical (0.0.2)
-  - HHZUtils/HHZUtils/plist (0.0.2)
-  - HHZUtils/HHZUtils/regular (0.0.2)
-  - HHZUtils/HHZUtils/system (0.0.2)
+  - HHZUtils (0.0.3.1):
+    - HHZUtils/HHZUtils (= 0.0.3.1)
+  - HHZUtils/HHZUtils (0.0.3.1):
+    - HHZUtils/HHZUtils/application (= 0.0.3.1)
+    - HHZUtils/HHZUtils/archive (= 0.0.3.1)
+    - HHZUtils/HHZUtils/calculate (= 0.0.3.1)
+    - HHZUtils/HHZUtils/cookie (= 0.0.3.1)
+    - HHZUtils/HHZUtils/date (= 0.0.3.1)
+    - HHZUtils/HHZUtils/device (= 0.0.3.1)
+    - HHZUtils/HHZUtils/encryption (= 0.0.3.1)
+    - HHZUtils/HHZUtils/exception (= 0.0.3.1)
+    - HHZUtils/HHZUtils/file (= 0.0.3.1)
+    - HHZUtils/HHZUtils/http (= 0.0.3.1)
+    - HHZUtils/HHZUtils/json (= 0.0.3.1)
+    - HHZUtils/HHZUtils/kit (= 0.0.3.1)
+    - HHZUtils/HHZUtils/numerical (= 0.0.3.1)
+    - HHZUtils/HHZUtils/plist (= 0.0.3.1)
+    - HHZUtils/HHZUtils/regular (= 0.0.3.1)
+    - HHZUtils/HHZUtils/sectionIndex (= 0.0.3.1)
+    - HHZUtils/HHZUtils/system (= 0.0.3.1)
+  - HHZUtils/HHZUtils/application (0.0.3.1)
+  - HHZUtils/HHZUtils/archive (0.0.3.1)
+  - HHZUtils/HHZUtils/calculate (0.0.3.1)
+  - HHZUtils/HHZUtils/cookie (0.0.3.1)
+  - HHZUtils/HHZUtils/date (0.0.3.1)
+  - HHZUtils/HHZUtils/device (0.0.3.1)
+  - HHZUtils/HHZUtils/encryption (0.0.3.1):
+    - HHZUtils/HHZUtils/encryption/GTMBase64 (= 0.0.3.1)
+  - HHZUtils/HHZUtils/encryption/GTMBase64 (0.0.3.1)
+  - HHZUtils/HHZUtils/exception (0.0.3.1)
+  - HHZUtils/HHZUtils/file (0.0.3.1)
+  - HHZUtils/HHZUtils/http (0.0.3.1)
+  - HHZUtils/HHZUtils/json (0.0.3.1)
+  - HHZUtils/HHZUtils/kit (0.0.3.1)
+  - HHZUtils/HHZUtils/numerical (0.0.3.1)
+  - HHZUtils/HHZUtils/plist (0.0.3.1)
+  - HHZUtils/HHZUtils/regular (0.0.3.1)
+  - HHZUtils/HHZUtils/sectionIndex (0.0.3.1)
+  - HHZUtils/HHZUtils/system (0.0.3.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.1.0)
-  - HHZUtils (~> 0.0.2)
+  - HHZUtils (from `https://github.com/chenzhe555/HHZUtils.git`)
+
+EXTERNAL SOURCES:
+  HHZUtils:
+    :git: https://github.com/chenzhe555/HHZUtils.git
+
+CHECKOUT OPTIONS:
+  HHZUtils:
+    :commit: 15585b8205a5982b57b5543dab09dd27c998b177
+    :git: https://github.com/chenzhe555/HHZUtils.git
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  HHZUtils: eb8df0af9afb762b76423b09ae6e3dbc15085a7f
+  HHZUtils: 8caa2bd6e807c196ff90d4406dca9ab977e7da3a
 
-PODFILE CHECKSUM: aa8acc7d2c72ebfd502a4125f4f5a1e7ec2a9626
+PODFILE CHECKSUM: ebfdd89d3eebd1de1b190ae9104479babf860572
 
-COCOAPODS: 1.3.0.beta.1
+COCOAPODS: 1.3.0.beta.3

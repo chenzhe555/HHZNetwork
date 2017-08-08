@@ -89,6 +89,21 @@
 #endif
 }
 
++(NSString *)gainiPhoneName
+{
+    return [UIDevice currentDevice].name;
+}
+
++(NSString *)gainSystemName
+{
+    return [UIDevice currentDevice].systemName;
+}
+
++(NSString *)gainCurrentLanguage
+{
+    return [NSLocale preferredLanguages][0];
+}
+
 #ifdef __IPHONE_OS_VERSION_MIN_REQUIRED
 +(BOOL)canMakePhoneCalls
 {

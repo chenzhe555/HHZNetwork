@@ -33,7 +33,7 @@
                                           &numBytesEncrypted);
     NSData * resultData = nil;
     if (cryptStatus == kCCSuccess) {
-        resultData = [NSData dataWithBytesNoCopy:buffer length:numBytesEncrypted];
+        resultData = [NSData dataWithBytes:buffer length:numBytesEncrypted];
     }
     
     free(buffer);
@@ -63,7 +63,7 @@
                                           &numBytesDecrypted);
     NSData * resultData = nil;
     if (cryptStatus == kCCSuccess) {
-        resultData = [NSData dataWithBytesNoCopy:buffer length:numBytesDecrypted];
+        resultData = [NSData dataWithBytes:buffer length:numBytesDecrypted];
     }
     
     free(buffer);

@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HHZHttpRequestCondition : NSObject
 //Manager的类名，有多个Manager的时候传入名，默认是nil
-@property (nonatomic, copy) NSString * managerName;
+@property (nonatomic, copy) NSString * _Nullable managerName;
 
 //是否需要带Token
 @property (nonatomic, assign) BOOL needToken;

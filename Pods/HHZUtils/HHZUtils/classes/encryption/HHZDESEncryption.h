@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 返回加密后的加密data,返回的data不能转换成NSString
  */
-+(NSData *)DESEncrypt:(NSData *)data WithKey:(NSString *)key;
++(NSData * _Nullable)DESEncrypt:(NSData *)data WithKey:(NSString *)key;
 
 
 
@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return 返回解密后的data
  */
-+(NSData *)DESDecrypt:(NSData *)data WithKey:(NSString *)key;
++(NSData * _Nullable)DESDecrypt:(NSData *)data WithKey:(NSString *)key;
 @end
 
 NS_ASSUME_NONNULL_END

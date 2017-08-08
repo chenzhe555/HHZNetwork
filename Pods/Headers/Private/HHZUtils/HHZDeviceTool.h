@@ -1,1 +1,1 @@
-../../../HHZUtils/HHZUtils/device/HHZDeviceTool.h
+../../../HHZUtils/HHZUtils/classes/device/HHZDeviceTool.h

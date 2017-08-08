@@ -1,1 +1,1 @@
-../../../HHZUtils/HHZUtils/regular/HHZRegularTool.h
+../../../HHZUtils/HHZUtils/classes/regular/HHZRegularTool.h

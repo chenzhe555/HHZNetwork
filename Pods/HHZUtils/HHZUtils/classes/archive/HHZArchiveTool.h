@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return
  */
-+(id)getDataFromFile:(NSString *)path;
++(id _Nullable)getDataFromFile:(NSString *)path;
 @end
 
 NS_ASSUME_NONNULL_END

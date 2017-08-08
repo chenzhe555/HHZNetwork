@@ -12,7 +12,4 @@
 
 -(NSString *)getTest1URL;
 
--(NSString *)getTest2URL;
-
-
 @end

@@ -44,7 +44,6 @@
 /**
  *  处理因网络情况导致的网络失败请求
  *
- *  @param error
  */
 -(void)manageServiceFail:(HHZHttpResponse *)responseObject
 {
