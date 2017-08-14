@@ -25,7 +25,7 @@
     
     //打印上传到信息
 #ifdef DEBUG
-    NSLog(@"<网络请求参数(%@):%lu>\n%@\n",request.url,(long)httpTag,request.paramaters);
+    NSLog(@"<网络请求参数(%@)/tag:%lu>\n%@\n",request.url,(long)httpTag,request.paramaters);
 #endif
     
     
