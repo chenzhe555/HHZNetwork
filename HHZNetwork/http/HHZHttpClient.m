@@ -24,7 +24,7 @@
     [self handleHttpCondition:condition];
     
     //打印参数信息
-    [self handlePrintJSON:condition request:request tag:httpTag isRequest:YES];
+    [self handlePrintJSON:condition.printJSONType paramaters:request.paramaters url:request.url tag:httpTag isRequest:YES];
     
     //发送网络请求前的回调
     if (beforeSend) beforeSend(request,condition);
@@ -34,7 +34,7 @@
         getTask = [[HHZHttpManager shareManager] POST:request.url parameters:request.paramaters progress:^(NSProgress * _Nonnull uploadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            [self handlePrintJSON:condition request:request tag:httpTag isRequest:NO];
+            [self handlePrintJSON:condition.printJSONType paramaters:responseObject url:request.url tag:httpTag isRequest:NO];
             
             HHZHttpResponse * reponse = [[HHZHttpResponse alloc] init];
             reponse.object = responseObject;
@@ -182,23 +182,23 @@
     }
 }
 
-+(void)handlePrintJSON:(HHZHttpRequestCondition *)condition request:(HHZHttpRequest *)request tag:(NSUInteger)httpTag isRequest:(BOOL)isRequest
++(void)handlePrintJSON:(HHZHttpPrintJSON)type paramaters:(id)paramaters url:(NSString *)url tag:(NSUInteger)httpTag isRequest:(BOOL)isRequest
 {
     NSString * str = nil;
     if (isRequest) str = @"网络请求参数";
     else str = @"网络返回参数";
     
-    switch (condition.printJSONType) {
+    switch (type) {
         case HHZHttpPrintJSONDebug:
         {
 #ifdef DEBUG
-            NSLog(@"<%@(%@)/tag:%lu>\n%@\n",str,request.url,(long)httpTag,[[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:request.paramaters options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]);
+            NSLog(@"<%@(%@)/tag:%lu>\n%@\n",str,url,(long)httpTag,[[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:paramaters options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]);
 #endif
         }
             break;
         case HHZHttpPrintJSONAlways:
         {
-            NSLog(@"<%@(%@)/tag:%lu>\n%@\n",str,request.url,(long)httpTag,[[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:request.paramaters options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]);
+            NSLog(@"<%@(%@)/tag:%lu>\n%@\n",str,url,(long)httpTag,[[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:paramaters options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]);
         }
             break;
         default:
