@@ -59,6 +59,10 @@ NS_ASSUME_NONNULL_BEGIN
  *  是否在证书域字段中验证域名(偶然不验证)
  */
 @property (nonatomic, assign) BOOL allowValidateDomain;
+/**
+ *  何种情况打印参数的JSON串
+ */
+@property (nonatomic, assign) HHZHttpPrintJSON printJSONType;
 
 
 

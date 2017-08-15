@@ -23,11 +23,8 @@
     //处理Condition情况
     [self handleHttpCondition:condition];
     
-    //打印上传到信息
-#ifdef DEBUG
-    NSLog(@"<网络请求参数(%@)/tag:%lu>\n%@\n",request.url,(long)httpTag,request.paramaters);
-#endif
-    
+    //打印参数信息
+    [self handlePrintJSON:condition request:request tag:httpTag isRequest:YES];
     
     //发送网络请求前的回调
     if (beforeSend) beforeSend(request,condition);
@@ -37,6 +34,8 @@
         getTask = [[HHZHttpManager shareManager] POST:request.url parameters:request.paramaters progress:^(NSProgress * _Nonnull uploadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            [self handlePrintJSON:condition request:request tag:httpTag isRequest:NO];
+            
             HHZHttpResponse * reponse = [[HHZHttpResponse alloc] init];
             reponse.object = responseObject;
             reponse.tag = httpTag;
@@ -180,6 +179,30 @@
             [[HHZHttpManager shareManager].securityPolicy setValidatesDomainName:condition.allowValidateDomain];
             break;
         }
+    }
+}
+
++(void)handlePrintJSON:(HHZHttpRequestCondition *)condition request:(HHZHttpRequest *)request tag:(NSUInteger)httpTag isRequest:(BOOL)isRequest
+{
+    NSString * str = nil;
+    if (isRequest) str = @"网络请求参数";
+    else str = @"网络返回参数";
+    
+    switch (condition.printJSONType) {
+        case HHZHttpPrintJSONDebug:
+        {
+#ifdef DEBUG
+            NSLog(@"<%@(%@)/tag:%lu>\n%@\n",str,request.url,(long)httpTag,[[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:request.paramaters options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]);
+#endif
+        }
+            break;
+        case HHZHttpPrintJSONAlways:
+        {
+            NSLog(@"<%@(%@)/tag:%lu>\n%@\n",str,request.url,(long)httpTag,[[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:request.paramaters options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]);
+        }
+            break;
+        default:
+            break;
     }
 }
 

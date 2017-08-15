@@ -43,3 +43,9 @@ typedef NS_ENUM(NSUInteger,HHZHttpProtocalType) {
     HHZHttpProtocalTypeHTTPS
 };
 
+
+typedef NS_ENUM(NSUInteger,HHZHttpPrintJSON) {
+    HHZHttpPrintJSONNever = 500,
+    HHZHttpPrintJSONDebug,
+    HHZHttpPrintJSONAlways
+};

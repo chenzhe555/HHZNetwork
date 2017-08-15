@@ -21,6 +21,7 @@
         _allowSniffer = YES;
         _allowInvalidCer = NO;
         _allowValidateDomain = NO;
+        _printJSONType = HHZHttpPrintJSONDebug;
     }
     return self;
 }
