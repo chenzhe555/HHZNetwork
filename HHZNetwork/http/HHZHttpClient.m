@@ -78,6 +78,76 @@
     return [HHZHttpResult generateDefaultResult:httpTag RequestURL:request.url Task:getTask];
 }
 
+
++(HHZHttpResult *)uploadImageWithData:(NSData *)imageData request:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail beforeSend:(HHZBeforeSendRequest)beforeSend
+{
+    
+    //生成Tag唯一标识
+    NSUInteger httpTag = [[HHZHttpTagBuilder shareManager] getSoleHttpTag];
+    
+    //添加附加请求参数
+    [self addExtraParamatersWithCondition:request];
+    
+    //对参数加密
+    [self encryptionRequest:request];
+    
+    //处理Condition情况
+    [self handleHttpCondition:condition];
+    
+    //打印参数信息
+    [self handlePrintJSON:condition.printJSONType paramaters:request.paramaters url:request.url tag:httpTag isRequest:YES];
+    
+    //发送网络请求前的回调
+    if (beforeSend) beforeSend(request,condition);
+    
+    
+//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+//    //接收类型不一致请替换一致text/html或别的
+//    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",
+//                                                         @"text/html",
+//                                                         @"image/jpeg",
+//                                                         @"image/png",
+//                                                         @"application/octet-stream",
+//                                                         @"text/json",
+//                                                         nil];
+//    NSString * url1 = @"http://192.168.2.48/rhcrm/index.php/home/appios/upload_photo";
+//    NSString * url2 = @"https://wx.kj521.com/rhcrm/index.php/home/appios/upload_photo";
+    
+    
+    
+    NSURLSessionDataTask * uploadtask = [[HHZHttpManager shareManager] POST:request.url parameters:request.paramaters constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
+        //上传的参数(上传图片，以文件流的格式)
+        [formData appendPartWithFileData:imageData
+                                    name:@"file"
+                                fileName:(request.uploadImageName.length == 0 ? @"missing.jpg" : request.uploadImageName)
+                                mimeType:@"image/jpeg"];
+    } progress:^(NSProgress *_Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask *_Nonnull task,id _Nullable responseObject) {
+        HHZHttpResponse * reponse = [[HHZHttpResponse alloc] init];
+        reponse.object = responseObject;
+        reponse.tag = httpTag;
+        reponse.requestUrl = request.url;
+        reponse.alertType = condition.alertType;
+        reponse.uploadImageName = request.uploadImageName;
+        
+        if (success) success(reponse);
+    } failure:^(NSURLSessionDataTask *_Nullable task, NSError *_Nonnull error) {
+        HHZHttpResponse * reponse = [[HHZHttpResponse alloc] init];
+        reponse.errorInfo = error;
+        reponse.tag = httpTag;
+        reponse.requestUrl = request.url;
+        reponse.alertType = condition.alertType;
+        reponse.uploadImageName = request.uploadImageName;
+        
+        if (fail) fail(reponse);
+    }];
+    
+    return [HHZHttpResult generateDefaultResult:httpTag RequestURL:request.url Task:uploadtask];
+}
+
+
+
 +(void)addExtraParamatersWithCondition:(HHZHttpRequest *)request
 {
     [request.paramaters setObject:[HHZDeviceTool getCurrentVersion] forKey:@"kAppVersion"];
@@ -85,6 +155,8 @@
     [request.paramaters setObject:[HHZDeviceTool getDeviceSystemVersion] forKey:@"kPhoneVersion"];
     [request.paramaters setObject:@"iOS" forKey:@"kChannel"];
 }
+
+
 
 +(void)encryptionRequest:(HHZHttpRequest *)request
 {

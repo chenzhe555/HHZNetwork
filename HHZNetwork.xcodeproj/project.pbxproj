@@ -18,6 +18,7 @@
 		6E4485121F39997000F4D1A8 /* HHZHttpStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4485051F39997000F4D1A8 /* HHZHttpStruct.m */; };
 		6E4485131F39997000F4D1A8 /* HHZHttpTagBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4485071F39997000F4D1A8 /* HHZHttpTagBuilder.m */; };
 		6E4485141F39997000F4D1A8 /* HHZHttpURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4485091F39997000F4D1A8 /* HHZHttpURLManager.m */; };
+		6E5E047B1F43C07000291640 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5E047A1F43C07000291640 /* ViewController.xib */; };
 		74A3FAB71F19179400A2706A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FAB61F19179400A2706A /* main.m */; };
 		74A3FABA1F19179400A2706A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FAB91F19179400A2706A /* AppDelegate.m */; };
 		74A3FABD1F19179400A2706A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FABC1F19179400A2706A /* ViewController.m */; };
@@ -52,6 +53,7 @@
 		6E4485071F39997000F4D1A8 /* HHZHttpTagBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpTagBuilder.m; sourceTree = "<group>"; };
 		6E4485081F39997000F4D1A8 /* HHZHttpURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpURLManager.h; sourceTree = "<group>"; };
 		6E4485091F39997000F4D1A8 /* HHZHttpURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpURLManager.m; sourceTree = "<group>"; };
+		6E5E047A1F43C07000291640 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		742B81EC1F1B9C1000C8BFDB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		74A3FAB21F19179400A2706A /* HHZNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHZNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A3FAB61F19179400A2706A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				74A3FAB91F19179400A2706A /* AppDelegate.m */,
 				74A3FABB1F19179400A2706A /* ViewController.h */,
 				74A3FABC1F19179400A2706A /* ViewController.m */,
+				6E5E047A1F43C07000291640 /* ViewController.xib */,
 				74A3FABE1F19179400A2706A /* Main.storyboard */,
 				74A3FAC11F19179400A2706A /* Assets.xcassets */,
 				74A3FAC31F19179400A2706A /* LaunchScreen.storyboard */,
@@ -244,6 +247,7 @@
 			files = (
 				74A3FAC51F19179400A2706A /* LaunchScreen.storyboard in Resources */,
 				74A3FAC21F19179400A2706A /* Assets.xcassets in Resources */,
+				6E5E047B1F43C07000291640 /* ViewController.xib in Resources */,
 				74A3FAC01F19179400A2706A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +447,7 @@
 				DEVELOPMENT_TEAM = P5LP3WSZUP;
 				GCC_PREFIX_HEADER = "${SRCROOT}/HHZNetwork/PrefixHeader.pch";
 				INFOPLIST_FILE = HHZNetwork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhe.HHZNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -458,6 +463,7 @@
 				DEVELOPMENT_TEAM = P5LP3WSZUP;
 				GCC_PREFIX_HEADER = "${SRCROOT}/HHZNetwork/PrefixHeader.pch";
 				INFOPLIST_FILE = HHZNetwork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenzhe.HHZNetwork;
 				PRODUCT_NAME = "$(TARGET_NAME)";

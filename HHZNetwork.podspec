@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HHZNetwork"
-  s.version      = "0.0.2.5"
+  s.version      = "0.0.2.6"
   s.summary      = "网络"
 
   # This description is used to generate tags and improve search results.

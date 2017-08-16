@@ -65,6 +65,12 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, copy) NSString * savePath;
 
+#pragma mark 图片上传
+/**
+ *  上传图片的名字
+ */
+@property (nonatomic, copy) NSString * uploadImageName;
+
 @end
 
 
@@ -101,6 +107,12 @@ NS_ASSUME_NONNULL_BEGIN
  *  返回数据的服务器地址
  */
 @property (nonatomic, copy) NSString * requestUrl;
+
+#pragma mark 上传图片
+/**
+ *  上传图片的名字
+ */
+@property (nonatomic, copy) NSString * uploadImageName;
 
 @end
 

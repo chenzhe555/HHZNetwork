@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "HHZHttpURLManager.h"
 #import "DemoHttpURLManager.h"
+#import <AFNetworking.h>
+#import "HHZHttpClient.h"
 
 @interface ViewController ()
 
@@ -25,6 +27,16 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)test
+{
+    
+}
+
+- (IBAction)testBtn:(id)sender
+{
+    
 }
 
 
