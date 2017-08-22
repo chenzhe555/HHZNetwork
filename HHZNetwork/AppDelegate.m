@@ -8,9 +8,10 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "DemoHttpService.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) DemoHttpService * currentService;
 @end
 
 @implementation AppDelegate
@@ -23,6 +24,11 @@
     
     self.window.rootViewController = vc;
     [self.window makeKeyAndVisible];
+    
+    
+//    self.currentService = [[DemoHttpService alloc] init];
+//    [self.currentService testHttpRequestArg1:@"1" Arg2:0 Condition:nil];
+    
     return YES;
 }
 

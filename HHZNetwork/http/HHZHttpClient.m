@@ -100,21 +100,6 @@
     //发送网络请求前的回调
     if (beforeSend) beforeSend(request,condition);
     
-    
-//    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-//    //接收类型不一致请替换一致text/html或别的
-//    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",
-//                                                         @"text/html",
-//                                                         @"image/jpeg",
-//                                                         @"image/png",
-//                                                         @"application/octet-stream",
-//                                                         @"text/json",
-//                                                         nil];
-//    NSString * url1 = @"http://192.168.2.48/rhcrm/index.php/home/appios/upload_photo";
-//    NSString * url2 = @"https://wx.kj521.com/rhcrm/index.php/home/appios/upload_photo";
-    
-    
-    
     NSURLSessionDataTask * uploadtask = [[HHZHttpManager shareManager] POST:request.url parameters:request.paramaters constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
         //上传的参数(上传图片，以文件流的格式)
         [formData appendPartWithFileData:imageData
@@ -195,23 +180,23 @@
 {
     switch (condition.serializerType) {
         case HHZHttpSerializerType1: {
-            [AFHTTPSessionManager manager].requestSerializer = [AFJSONRequestSerializer serializer];
-            [AFHTTPSessionManager manager].responseSerializer = [AFJSONResponseSerializer serializer];
+            [HHZHttpManager shareManager].requestSerializer = [AFJSONRequestSerializer serializer];
+            [HHZHttpManager shareManager].responseSerializer = [AFJSONResponseSerializer serializer];
             break;
         }
         case HHZHttpSerializerType2: {
-            [AFHTTPSessionManager manager].requestSerializer = [AFJSONRequestSerializer serializer];
-            [AFHTTPSessionManager manager].responseSerializer = [AFHTTPResponseSerializer serializer];
+            [HHZHttpManager shareManager].requestSerializer = [AFJSONRequestSerializer serializer];
+            [HHZHttpManager shareManager].responseSerializer = [AFHTTPResponseSerializer serializer];
             break;
         }
         case HHZHttpSerializerType3: {
-            [AFHTTPSessionManager manager].requestSerializer = [AFHTTPRequestSerializer serializer];
-            [AFHTTPSessionManager manager].responseSerializer = [AFJSONResponseSerializer serializer];
+            [HHZHttpManager shareManager].requestSerializer = [AFHTTPRequestSerializer serializer];
+            [HHZHttpManager shareManager].responseSerializer = [AFJSONResponseSerializer serializer];
             break;
         }
         case HHZHttpSerializerType4: {
-            [AFHTTPSessionManager manager].requestSerializer = [AFHTTPRequestSerializer serializer];
-            [AFHTTPSessionManager manager].responseSerializer = [AFHTTPResponseSerializer serializer];
+            [HHZHttpManager shareManager].requestSerializer = [AFHTTPRequestSerializer serializer];
+            [HHZHttpManager shareManager].responseSerializer = [AFHTTPResponseSerializer serializer];
             break;
         }
         default:
@@ -256,21 +241,31 @@
 
 +(void)handlePrintJSON:(HHZHttpPrintJSON)type paramaters:(id)paramaters url:(NSString *)url tag:(NSUInteger)httpTag isRequest:(BOOL)isRequest
 {
-    NSString * str = nil;
-    if (isRequest) str = @"网络请求参数";
-    else str = @"网络返回参数";
+    NSString * str;
+    NSDictionary * header;
+    if (isRequest)
+    {
+        str = @"网络请求参数";
+        header = [HHZHttpManager shareManager].requestSerializer.HTTPRequestHeaders;
+    }
+    else
+    {
+        str = @"网络返回参数";
+        
+    }
+    
     
     switch (type) {
         case HHZHttpPrintJSONDebug:
         {
 #ifdef DEBUG
-            NSLog(@"<%@(%@)/tag:%lu>\n%@\n",str,url,(long)httpTag,[[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:paramaters options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]);
+            NSLog(@"<Header:\n%@\n><%@(%@)/tag:%lu>\n%@\n",header,str,url,(long)httpTag,[[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:paramaters options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]);
 #endif
         }
             break;
         case HHZHttpPrintJSONAlways:
         {
-            NSLog(@"<%@(%@)/tag:%lu>\n%@\n",str,url,(long)httpTag,[[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:paramaters options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]);
+            NSLog(@"<Header:\n%@\n><%@(%@)/tag:%lu>\n%@\n",header,str,url,(long)httpTag,[[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:paramaters options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]);
         }
             break;
         default:
