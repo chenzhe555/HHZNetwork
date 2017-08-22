@@ -26,8 +26,8 @@
     [self.window makeKeyAndVisible];
     
     
-//    self.currentService = [[DemoHttpService alloc] init];
-//    [self.currentService testHttpRequestArg1:@"1" Arg2:0 Condition:nil];
+    self.currentService = [[DemoHttpService alloc] init];
+    [self.currentService testHttpRequestArg1:@"1" Arg2:0 Condition:nil];
     
     return YES;
 }

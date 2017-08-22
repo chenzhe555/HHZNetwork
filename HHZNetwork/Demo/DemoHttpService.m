@@ -127,6 +127,8 @@
     request.paramaters = parameters;
     request.url = [[DemoHttpURLManager shareManager] getTest1URL];
     
+    request.url = @"https://wx.kj521.com/rhcrm/index.php/home/appios/get_appios_config";
+    
     __weak typeof(self) weakSelf = self;
     return [HHZHttpClient sendRequest:request appendCondition:condition success:^(HHZHttpResponse * _Nonnull responseObject) {
         [weakSelf manageServiceSuccess:responseObject];

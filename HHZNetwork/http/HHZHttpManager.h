@@ -19,13 +19,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 +(nonnull instancetype)shareManager;
 
-/**
- *  获取主机IP
- *
- *  @return 
- */
--(nullable NSString *)getBaseHttpUrl;
-
 @end
 
 

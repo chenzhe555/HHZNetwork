@@ -24,7 +24,7 @@
     [self handleHttpCondition:condition];
     
     //打印参数信息
-    [self handlePrintJSON:condition.printJSONType paramaters:request.paramaters url:request.url tag:httpTag isRequest:YES];
+    [self handlePrintJSON:condition.printJSONType paramaters:request.paramaters url:request.url tag:httpTag isRequest:YES task:nil];
     
     //发送网络请求前的回调
     if (beforeSend) beforeSend(request,condition);
@@ -34,8 +34,8 @@
         getTask = [[HHZHttpManager shareManager] POST:request.url parameters:request.paramaters progress:^(NSProgress * _Nonnull uploadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            [self handlePrintJSON:condition.printJSONType paramaters:responseObject url:request.url tag:httpTag isRequest:NO];
-            
+            [self handlePrintJSON:condition.printJSONType paramaters:responseObject url:request.url tag:httpTag isRequest:NO task:task];
+
             HHZHttpResponse * reponse = [[HHZHttpResponse alloc] init];
             reponse.object = responseObject;
             reponse.tag = httpTag;
@@ -58,6 +58,8 @@
         getTask = [[HHZHttpManager shareManager] POST:request.url parameters:request.paramaters progress:^(NSProgress * _Nonnull uploadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            [self handlePrintJSON:condition.printJSONType paramaters:responseObject url:request.url tag:httpTag isRequest:NO task:task];
+            
             HHZHttpResponse * reponse = [[HHZHttpResponse alloc] init];
             reponse.object = responseObject;
             reponse.tag = httpTag;
@@ -95,7 +97,7 @@
     [self handleHttpCondition:condition];
     
     //打印参数信息
-    [self handlePrintJSON:condition.printJSONType paramaters:request.paramaters url:request.url tag:httpTag isRequest:YES];
+    [self handlePrintJSON:condition.printJSONType paramaters:request.paramaters url:request.url tag:httpTag isRequest:YES task:nil];
     
     //发送网络请求前的回调
     if (beforeSend) beforeSend(request,condition);
@@ -239,33 +241,41 @@
     }
 }
 
-+(void)handlePrintJSON:(HHZHttpPrintJSON)type paramaters:(id)paramaters url:(NSString *)url tag:(NSUInteger)httpTag isRequest:(BOOL)isRequest
++(void)handlePrintJSON:(HHZHttpPrintJSON)type paramaters:(id)paramaters url:(NSString *)url tag:(NSUInteger)httpTag isRequest:(BOOL)isRequest task:(NSURLSessionDataTask *)task
 {
     NSString * str;
-    NSDictionary * header;
-    if (isRequest)
-    {
-        str = @"网络请求参数";
-        header = [HHZHttpManager shareManager].requestSerializer.HTTPRequestHeaders;
-    }
-    else
-    {
-        str = @"网络返回参数";
-        
-    }
-    
+    if (isRequest) str = @"网络请求参数";
+    else str = @"网络返回参数";
     
     switch (type) {
         case HHZHttpPrintJSONDebug:
         {
 #ifdef DEBUG
-            NSLog(@"<Header:\n%@\n><%@(%@)/tag:%lu>\n%@\n",header,str,url,(long)httpTag,[[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:paramaters options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]);
+            NSLog(@"\n<%@(%@)/tag:%lu>\n%@\n",str,url,(long)httpTag,[[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:paramaters options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]);
+            
+//            if (task)
+//            {
+//                NSLog(@"\n请求头信息:\n%@\n",task.currentRequest.allHTTPHeaderFields);
+//                if ([task.response isKindOfClass:[NSHTTPURLResponse class]])
+//                {
+//                    NSLog(@"\n返回头信息:\n%@\n",((NSHTTPURLResponse *)task.response).allHeaderFields);
+//                }
+//            }
 #endif
         }
             break;
         case HHZHttpPrintJSONAlways:
         {
-            NSLog(@"<Header:\n%@\n><%@(%@)/tag:%lu>\n%@\n",header,str,url,(long)httpTag,[[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:paramaters options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]);
+            NSLog(@"\n<%@(%@)/tag:%lu>\n%@\n",str,url,(long)httpTag,[[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:paramaters options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding]);
+            
+//            if (task)
+//            {
+//                NSLog(@"\n请求头信息:\n%@\n",task.currentRequest.allHTTPHeaderFields);
+//                if ([task.response isKindOfClass:[NSHTTPURLResponse class]])
+//                {
+//                    NSLog(@"\n返回头信息:\n%@\n",((NSHTTPURLResponse *)task.response).allHeaderFields);
+//                }
+//            }
         }
             break;
         default:
