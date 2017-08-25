@@ -30,26 +30,35 @@
     if (beforeSend) beforeSend(request,condition);
     
     NSURLSessionDataTask * getTask = nil;
-    if ([request.requestMethod isEqualToString:@"POST"]) {
-        getTask = [[HHZHttpManager shareManager] POST:request.url parameters:request.paramaters progress:^(NSProgress * _Nonnull uploadProgress) {
+    if ([request.requestMethod isEqualToString:@"GET"])
+    {
+        getTask = [[HHZHttpManager shareManager] GET:request.url parameters:request.paramaters progress:^(NSProgress * _Nonnull downloadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            [self handlePrintJSON:condition.printJSONType paramaters:responseObject url:request.url tag:httpTag isRequest:NO task:task];
-
-            HHZHttpResponse * reponse = [[HHZHttpResponse alloc] init];
-            reponse.object = responseObject;
-            reponse.tag = httpTag;
-            reponse.requestUrl = request.url;
-            reponse.alertType = condition.alertType;
-            
+            HHZHttpResponse * reponse = [self handleSuccessResponseObject:responseObject httpTag:httpTag request:request appendCondition:condition task:task];
             if (success) success(reponse);
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            HHZHttpResponse * reponse = [[HHZHttpResponse alloc] init];
-            reponse.errorInfo = error;
-            reponse.tag = httpTag;
-            reponse.requestUrl = request.url;
-            reponse.alertType = condition.alertType;
-            
+            HHZHttpResponse * reponse = [self handleFailHttpTag:httpTag request:request appendCondition:condition task:task error:error];
+            if (fail) fail(reponse);
+        }];
+    }
+    else if ([request.requestMethod isEqualToString:@"PATCH"])
+    {
+        getTask = [[HHZHttpManager shareManager] PATCH:request.url parameters:request.paramaters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            HHZHttpResponse * reponse = [self handleSuccessResponseObject:responseObject httpTag:httpTag request:request appendCondition:condition task:task];
+            if (success) success(reponse);
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            HHZHttpResponse * reponse = [self handleFailHttpTag:httpTag request:request appendCondition:condition task:task error:error];
+            if (fail) fail(reponse);
+        }];
+    }
+    else if ([request.requestMethod isEqualToString:@"DELETE"])
+    {
+        getTask = [[HHZHttpManager shareManager] DELETE:request.url parameters:request.paramaters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            HHZHttpResponse * reponse = [self handleSuccessResponseObject:responseObject httpTag:httpTag request:request appendCondition:condition task:task];
+            if (success) success(reponse);
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            HHZHttpResponse * reponse = [self handleFailHttpTag:httpTag request:request appendCondition:condition task:task error:error];
             if (fail) fail(reponse);
         }];
     }
@@ -58,26 +67,37 @@
         getTask = [[HHZHttpManager shareManager] POST:request.url parameters:request.paramaters progress:^(NSProgress * _Nonnull uploadProgress) {
             
         } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-            [self handlePrintJSON:condition.printJSONType paramaters:responseObject url:request.url tag:httpTag isRequest:NO task:task];
-            
-            HHZHttpResponse * reponse = [[HHZHttpResponse alloc] init];
-            reponse.object = responseObject;
-            reponse.tag = httpTag;
-            reponse.requestUrl = request.url;
-            reponse.alertType = condition.alertType;
-            
+            HHZHttpResponse * reponse = [self handleSuccessResponseObject:responseObject httpTag:httpTag request:request appendCondition:condition task:task];
             if (success) success(reponse);
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-            HHZHttpResponse * reponse = [[HHZHttpResponse alloc] init];
-            reponse.errorInfo = error;
-            reponse.tag = httpTag;
-            reponse.requestUrl = request.url;
-            reponse.alertType = condition.alertType;
-            
+            HHZHttpResponse * reponse = [self handleFailHttpTag:httpTag request:request appendCondition:condition task:task error:error];
             if (fail) fail(reponse);
         }];
     }
     return [HHZHttpResult generateDefaultResult:httpTag RequestURL:request.url Task:getTask];
+}
+
+#pragma mark 处理网络请求结果的输出
++(HHZHttpResponse *)handleSuccessResponseObject:(id _Nullable)responseObject httpTag:(NSUInteger)httpTag request:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition task:(NSURLSessionDataTask * _Nonnull)task
+{
+    [self handlePrintJSON:condition.printJSONType paramaters:responseObject url:request.url tag:httpTag isRequest:NO task:task];
+    
+    HHZHttpResponse * reponse = [[HHZHttpResponse alloc] init];
+    reponse.object = responseObject;
+    reponse.tag = httpTag;
+    reponse.requestUrl = request.url;
+    reponse.alertType = condition.alertType;
+    return reponse;
+}
+
++(HHZHttpResponse *)handleFailHttpTag:(NSUInteger)httpTag request:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition task:(NSURLSessionDataTask * _Nonnull)task error:(NSError * _Nonnull)error
+{
+    HHZHttpResponse * reponse = [[HHZHttpResponse alloc] init];
+    reponse.errorInfo = error;
+    reponse.tag = httpTag;
+    reponse.requestUrl = request.url;
+    reponse.alertType = condition.alertType;
+    return reponse;
 }
 
 
@@ -240,6 +260,8 @@
         }
     }
 }
+
+
 
 +(void)handlePrintJSON:(HHZHttpPrintJSON)type paramaters:(id)paramaters url:(NSString *)url tag:(NSUInteger)httpTag isRequest:(BOOL)isRequest task:(NSURLSessionDataTask *)task
 {
