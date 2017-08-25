@@ -103,7 +103,7 @@
 +(HHZHttpResult *)uploadImageWithDataArray:(NSArray<NSData *> *)imageDataArray request:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail beforeSend:(HHZBeforeSendRequest)beforeSend
 {
     //如果图片和文件名字不一致，则不上传
-    if (imageDataArray.count == 0 || imageDataArray.count != request.uploadImageNames.count) return [[HHZHttpResult alloc] init];
+    if (imageDataArray.count != request.uploadImageNames.count) return [[HHZHttpResult alloc] init];
     
     //生成Tag唯一标识
     NSUInteger httpTag = [[HHZHttpTagBuilder shareManager] getSoleHttpTag];

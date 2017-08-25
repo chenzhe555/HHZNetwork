@@ -34,10 +34,14 @@ typedef void (^HHZFailureBlock)(HHZHttpResponse * responseObject);
  */
 +(HHZHttpResult * _Nullable)sendRequest:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail beforeSend:(HHZBeforeSendRequest)beforeSend;
 
-+(HHZHttpResult * _Nullable)uploadImageWithData:(NSData *)imageData request:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail beforeSend:(HHZBeforeSendRequest)beforeSend;
-
-
-+(HHZHttpResult * _Nullable)uploadImageWithDataArray:(NSArray<NSData *> *)imageDataArray request:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail beforeSend:(HHZBeforeSendRequest)beforeSend;
+/**
+ *  上传多张图片
+ *
+ *  @param imageDataArray 自行压缩后的图片
+ *
+ *  @return 当前请求唯一的tag标识
+ */
++(HHZHttpResult * _Nullable)uploadImageWithDataArray:(NSArray<NSData *> * _Nullable)imageDataArray request:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail beforeSend:(HHZBeforeSendRequest)beforeSend;
 
 
 /**
