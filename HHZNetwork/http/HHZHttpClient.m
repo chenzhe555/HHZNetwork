@@ -87,6 +87,7 @@
     reponse.tag = httpTag;
     reponse.requestUrl = request.url;
     reponse.alertType = condition.alertType;
+    reponse.taskState = task.state;
     return reponse;
 }
 
@@ -97,6 +98,7 @@
     reponse.tag = httpTag;
     reponse.requestUrl = request.url;
     reponse.alertType = condition.alertType;
+    reponse.taskState = task.state;
     return reponse;
 }
 
@@ -141,6 +143,7 @@
         reponse.requestUrl = request.url;
         reponse.alertType = condition.alertType;
         reponse.uploadImageNames = request.uploadImageNames;
+        reponse.taskState = task.state;
         
         if (success) success(reponse);
     } failure:^(NSURLSessionDataTask *_Nullable task, NSError *_Nonnull error) {
@@ -150,6 +153,7 @@
         reponse.requestUrl = request.url;
         reponse.alertType = condition.alertType;
         reponse.uploadImageNames = request.uploadImageNames;
+        reponse.taskState = task.state;
         
         if (fail) fail(reponse);
     }];

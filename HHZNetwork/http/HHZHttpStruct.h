@@ -89,6 +89,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) id object;
 
 /**
+ *  获取当前Task是否被取消或者别的情况
+ */
+@property (nonatomic, assign) NSURLSessionTaskState taskState;
+
+/**
  *  无论网络失败还是网络请求成功但是返回异常，错误信息都是在errorInfo里面
  */
 @property (nonatomic, strong) NSError * errorInfo;
