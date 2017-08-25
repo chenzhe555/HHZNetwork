@@ -100,9 +100,10 @@
     return reponse;
 }
 
-
-+(HHZHttpResult *)uploadImageWithData:(NSData *)imageData request:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail beforeSend:(HHZBeforeSendRequest)beforeSend
++(HHZHttpResult *)uploadImageWithDataArray:(NSArray<NSData *> *)imageDataArray request:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail beforeSend:(HHZBeforeSendRequest)beforeSend
 {
+    //如果图片和文件名字不一致，则不上传
+    if (imageDataArray.count == 0 || imageDataArray.count != request.uploadImageNames.count) return [[HHZHttpResult alloc] init];
     
     //生成Tag唯一标识
     NSUInteger httpTag = [[HHZHttpTagBuilder shareManager] getSoleHttpTag];
@@ -123,11 +124,14 @@
     if (beforeSend) beforeSend(request,condition);
     
     NSURLSessionDataTask * uploadtask = [[HHZHttpManager shareManager] POST:request.url parameters:request.paramaters constructingBodyWithBlock:^(id<AFMultipartFormData> _Nonnull formData) {
-        //上传的参数(上传图片，以文件流的格式)
-        [formData appendPartWithFileData:imageData
-                                    name:@"file"
-                                fileName:(request.uploadImageName.length == 0 ? @"missing.jpg" : request.uploadImageName)
-                                mimeType:@"image/jpeg"];
+        for (int i = 0; i < imageDataArray.count; ++i)
+        {
+            //上传的参数(上传图片，以文件流的格式)
+            [formData appendPartWithFileData:((NSData *)imageDataArray[i])
+                                        name:@"file"
+                                    fileName:request.uploadImageNames[i]
+                                    mimeType:@"image/jpeg"];
+        }
     } progress:^(NSProgress *_Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask *_Nonnull task,id _Nullable responseObject) {
@@ -136,7 +140,7 @@
         reponse.tag = httpTag;
         reponse.requestUrl = request.url;
         reponse.alertType = condition.alertType;
-        reponse.uploadImageName = request.uploadImageName;
+        reponse.uploadImageNames = request.uploadImageNames;
         
         if (success) success(reponse);
     } failure:^(NSURLSessionDataTask *_Nullable task, NSError *_Nonnull error) {
@@ -145,7 +149,7 @@
         reponse.tag = httpTag;
         reponse.requestUrl = request.url;
         reponse.alertType = condition.alertType;
-        reponse.uploadImageName = request.uploadImageName;
+        reponse.uploadImageNames = request.uploadImageNames;
         
         if (fail) fail(reponse);
     }];

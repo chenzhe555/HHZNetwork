@@ -69,7 +69,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  上传图片的名字
  */
-@property (nonatomic, copy) NSString * uploadImageName;
+@property (nonatomic, strong) NSArray<NSString *> * uploadImageNames;
 
 @end
 
@@ -112,7 +112,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  上传图片的名字
  */
-@property (nonatomic, copy) NSString * uploadImageName;
+@property (nonatomic, strong) NSArray<NSString *> * uploadImageNames;
 
 @end
 

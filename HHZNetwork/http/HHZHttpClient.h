@@ -37,6 +37,9 @@ typedef void (^HHZFailureBlock)(HHZHttpResponse * responseObject);
 +(HHZHttpResult * _Nullable)uploadImageWithData:(NSData *)imageData request:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail beforeSend:(HHZBeforeSendRequest)beforeSend;
 
 
++(HHZHttpResult * _Nullable)uploadImageWithDataArray:(NSArray<NSData *> *)imageDataArray request:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail beforeSend:(HHZBeforeSendRequest)beforeSend;
+
+
 /**
  *  添加附加参数
  *
