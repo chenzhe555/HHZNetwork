@@ -93,6 +93,8 @@
 
 +(HHZHttpResponse *)handleFailHttpTag:(NSUInteger)httpTag request:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition task:(NSURLSessionDataTask * _Nonnull)task error:(NSError * _Nonnull)error
 {
+    [self handleFailPrintJSON:condition.printJSONType url:request.url tag:httpTag error:error];
+    
     HHZHttpResponse * reponse = [[HHZHttpResponse alloc] init];
     reponse.errorInfo = error;
     reponse.tag = httpTag;
@@ -306,6 +308,27 @@
 //                    NSLog(@"\n返回头信息:\n%@\n",((NSHTTPURLResponse *)task.response).allHeaderFields);
 //                }
 //            }
+        }
+            break;
+        default:
+            break;
+    }
+}
+
++(void)handleFailPrintJSON:(HHZHttpPrintJSON)type url:(NSString *)url tag:(NSUInteger)httpTag error:(NSError *)error
+{
+    NSString * str = @"网络返回参数(失败)";
+    switch (type) {
+        case HHZHttpPrintJSONDebug:
+        {
+#ifdef DEBUG
+            NSLog(@"\n<%@(%@)/tag:%lu>\n%@\n",str,url,(long)httpTag,error);
+#endif
+        }
+            break;
+        case HHZHttpPrintJSONAlways:
+        {
+            NSLog(@"\n<%@(%@)/tag:%lu>\n%@\n",str,url,(long)httpTag,error);
         }
             break;
         default:
