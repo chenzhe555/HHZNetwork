@@ -139,24 +139,12 @@
     } progress:^(NSProgress *_Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask *_Nonnull task,id _Nullable responseObject) {
-        HHZHttpResponse * reponse = [[HHZHttpResponse alloc] init];
-        reponse.object = responseObject;
-        reponse.tag = httpTag;
-        reponse.requestUrl = request.url;
-        reponse.alertType = condition.alertType;
+        HHZHttpResponse * reponse = [self handleSuccessResponseObject:responseObject httpTag:httpTag request:request appendCondition:condition task:task];
         reponse.uploadImageNames = request.uploadImageNames;
-        reponse.taskState = task.state;
-        
         if (success) success(reponse);
     } failure:^(NSURLSessionDataTask *_Nullable task, NSError *_Nonnull error) {
-        HHZHttpResponse * reponse = [[HHZHttpResponse alloc] init];
-        reponse.errorInfo = error;
-        reponse.tag = httpTag;
-        reponse.requestUrl = request.url;
-        reponse.alertType = condition.alertType;
+        HHZHttpResponse * reponse = [self handleFailHttpTag:httpTag request:request appendCondition:condition task:task error:error];
         reponse.uploadImageNames = request.uploadImageNames;
-        reponse.taskState = task.state;
-        
         if (fail) fail(reponse);
     }];
     
