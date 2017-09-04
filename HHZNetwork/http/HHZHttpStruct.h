@@ -67,6 +67,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark 图片上传
 /**
+ *  上传图片的Field ID,可以理解为每个boundary的ID
+ */
+@property (nonatomic, strong) NSArray<NSString *> * uploadFieldIDNames;
+/**
  *  上传图片的名字
  */
 @property (nonatomic, strong) NSArray<NSString *> * uploadImageNames;
@@ -114,6 +118,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString * requestUrl;
 
 #pragma mark 上传图片
+/**
+ *  上传图片的Field ID,可以理解为每个boundary的ID
+ */
+@property (nonatomic, strong) NSArray<NSString *> * uploadFieldIDNames;
 /**
  *  上传图片的名字
  */

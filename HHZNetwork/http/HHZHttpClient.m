@@ -107,7 +107,7 @@
 +(HHZHttpResult *)uploadImageWithDataArray:(NSArray<NSData *> *)imageDataArray request:(HHZHttpRequest *)request appendCondition:(HHZHttpRequestCondition *)condition success:(HHZSuccessBlock)success fail:(HHZFailureBlock)fail beforeSend:(HHZBeforeSendRequest)beforeSend
 {
     //如果图片和文件名字不一致，则不上传
-    if (imageDataArray.count != request.uploadImageNames.count) return [[HHZHttpResult alloc] init];
+    if (imageDataArray.count != request.uploadFieldIDNames.count) return [[HHZHttpResult alloc] init];
     
     //生成Tag唯一标识
     NSUInteger httpTag = [[HHZHttpTagBuilder shareManager] getSoleHttpTag];
@@ -132,7 +132,7 @@
         {
             //上传的参数(上传图片，以文件流的格式)
             [formData appendPartWithFileData:((NSData *)imageDataArray[i])
-                                        name:@"file"
+                                        name:request.uploadFieldIDNames[i]
                                     fileName:request.uploadImageNames[i]
                                     mimeType:@"image/jpeg"];
         }
@@ -141,10 +141,12 @@
     } success:^(NSURLSessionDataTask *_Nonnull task,id _Nullable responseObject) {
         HHZHttpResponse * reponse = [self handleSuccessResponseObject:responseObject httpTag:httpTag request:request appendCondition:condition task:task];
         reponse.uploadImageNames = request.uploadImageNames;
+        reponse.uploadFieldIDNames = request.uploadFieldIDNames;
         if (success) success(reponse);
     } failure:^(NSURLSessionDataTask *_Nullable task, NSError *_Nonnull error) {
         HHZHttpResponse * reponse = [self handleFailHttpTag:httpTag request:request appendCondition:condition task:task error:error];
         reponse.uploadImageNames = request.uploadImageNames;
+        reponse.uploadFieldIDNames = request.uploadFieldIDNames;
         if (fail) fail(reponse);
     }];
     
