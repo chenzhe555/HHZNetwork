@@ -27,4 +27,20 @@
     @throw [HHZMethodException exceptionWithClass:HHZHttpService_CLASS_NAME Method:NSStringFromSelector(_cmd)];
 }
 
+-(BOOL)handleServiceParameterWhetherIsNull:(id)obj
+{
+    return [self handleServiceParameterWhetherIsNull:obj allowNullString:NO];
+}
+
+-(BOOL)handleServiceParameterWhetherIsNull:(id)obj allowNullString:(BOOL)allowNullString
+{
+    if (!obj) return YES;
+    if ([obj isKindOfClass:[NSNull class]]) return YES;
+    if (!allowNullString)
+    {
+        if ([obj isEqualToString:@"(null)"]) return YES;
+    }
+    return NO;
+}
+
 @end

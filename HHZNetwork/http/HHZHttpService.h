@@ -43,4 +43,15 @@
  */
 -(void)handleFailInfo:(HHZHttpResponse *)responeseObject;
 
+#pragma mark 辅助方法
+/**
+ *  判断服务器字段是否为空的情况
+ */
+-(BOOL)handleServiceParameterWhetherIsNull:(id)obj;
+
+/**
+ *  判断服务器字段是否为空的情况   (YES认为(null)为正常数据不进行排除，NO认为(null)为服务器异常导致的数据需要进行排除)
+ */
+-(BOOL)handleServiceParameterWhetherIsNull:(id)obj allowNullString:(BOOL)allowNullString;
+
 @end
