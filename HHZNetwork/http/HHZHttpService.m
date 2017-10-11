@@ -34,7 +34,6 @@
 
 -(BOOL)handleServiceParameterWhetherIsNull:(id)obj allowNullString:(BOOL)allowNullString
 {
-    if (!obj) return YES;
     if ([obj isKindOfClass:[NSNull class]]) return YES;
     if (!allowNullString)
     {
