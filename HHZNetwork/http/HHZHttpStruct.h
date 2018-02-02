@@ -103,9 +103,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSError * errorInfo;
 
 /**
- *  判断是网络请求成功获取服务器返回的失败还是未连接到服务器请求回来的失败 yes代表服务器返回的失败 no代表就是纯粹网络失败
+ *  网络请求失败:
+ *  1.服务器返回的fail
+ *  2.本身请求的fail
+ *  3.token失效强制登录的fail
  */
-@property (nonatomic, assign) BOOL isRequestSuccessFail;
+@property (nonatomic, assign) NSInteger requestFailState;
 
 /**
  *  针对特定网络请求Service，设置请求失败后的弹框提示类型

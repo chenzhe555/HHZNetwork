@@ -19,6 +19,7 @@
 		6E4485131F39997000F4D1A8 /* HHZHttpTagBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4485071F39997000F4D1A8 /* HHZHttpTagBuilder.m */; };
 		6E4485141F39997000F4D1A8 /* HHZHttpURLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4485091F39997000F4D1A8 /* HHZHttpURLManager.m */; };
 		6E5E047B1F43C07000291640 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E5E047A1F43C07000291640 /* ViewController.xib */; };
+		7429FD4C1FC2E5400059965C /* HHZHttpConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7429FD4B1FC2E5400059965C /* HHZHttpConfig.m */; };
 		74A3FAB71F19179400A2706A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FAB61F19179400A2706A /* main.m */; };
 		74A3FABA1F19179400A2706A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FAB91F19179400A2706A /* AppDelegate.m */; };
 		74A3FABD1F19179400A2706A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74A3FABC1F19179400A2706A /* ViewController.m */; };
@@ -54,6 +55,8 @@
 		6E4485081F39997000F4D1A8 /* HHZHttpURLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZHttpURLManager.h; sourceTree = "<group>"; };
 		6E4485091F39997000F4D1A8 /* HHZHttpURLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZHttpURLManager.m; sourceTree = "<group>"; };
 		6E5E047A1F43C07000291640 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		7429FD4A1FC2E5400059965C /* HHZHttpConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HHZHttpConfig.h; sourceTree = "<group>"; };
+		7429FD4B1FC2E5400059965C /* HHZHttpConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HHZHttpConfig.m; sourceTree = "<group>"; };
 		742B81EC1F1B9C1000C8BFDB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		74A3FAB21F19179400A2706A /* HHZNetwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHZNetwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74A3FAB61F19179400A2706A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 				6E4485071F39997000F4D1A8 /* HHZHttpTagBuilder.m */,
 				6E4485081F39997000F4D1A8 /* HHZHttpURLManager.h */,
 				6E4485091F39997000F4D1A8 /* HHZHttpURLManager.m */,
+				7429FD4A1FC2E5400059965C /* HHZHttpConfig.h */,
+				7429FD4B1FC2E5400059965C /* HHZHttpConfig.m */,
 			);
 			path = http;
 			sourceTree = "<group>";
@@ -315,6 +320,7 @@
 				74A3FABD1F19179400A2706A /* ViewController.m in Sources */,
 				6E44850C1F39997000F4D1A8 /* HHZHttpClient.m in Sources */,
 				6E4485141F39997000F4D1A8 /* HHZHttpURLManager.m in Sources */,
+				7429FD4C1FC2E5400059965C /* HHZHttpConfig.m in Sources */,
 				74A3FABA1F19179400A2706A /* AppDelegate.m in Sources */,
 				6E44850A1F39997000F4D1A8 /* DemoHttpService.m in Sources */,
 				74A3FAB71F19179400A2706A /* main.m in Sources */,

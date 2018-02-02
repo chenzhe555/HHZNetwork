@@ -16,6 +16,8 @@
 #import "HHZHttpRequestCondition.h"
 #import "HHZHttpClient.h"
 
+typedef void(^RequestFailStateBlock)(id obj);
+
 @interface HHZHttpService : NSObject
 @property (nonatomic, assign) id<HHZHttpServiceDelegate> serviceDelegate;
 
@@ -37,11 +39,11 @@
 
 
 /**
- *  处理服务器未连接成功error以及网络请求成功返回error两种情况
+ *  处理网络请求各种失败情况
  *
  *  @param responeseObject 网络结果数据结构
  */
--(void)handleFailInfo:(HHZHttpResponse *)responeseObject;
+-(void)handleFailInfo:(HHZHttpResponse *)responeseObject block:(RequestFailStateBlock)block;
 
 #pragma mark 辅助方法
 /**

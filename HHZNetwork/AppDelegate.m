@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "DemoHttpService.h"
+#import "HHZHttpConfig.h"
 
 @interface AppDelegate ()
 @property (nonatomic, strong) DemoHttpService * currentService;
@@ -28,6 +29,8 @@
     
     self.currentService = [[DemoHttpService alloc] init];
     [self.currentService testHttpRequestArg1:@"1" Arg2:0 Condition:nil];
+    
+    NSLog(@"*****%d",[HHZHttpConfig shareManager].printHeaders);
     
     return YES;
 }

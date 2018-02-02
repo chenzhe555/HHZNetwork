@@ -22,7 +22,7 @@
     @throw [HHZMethodException exceptionWithClass:HHZHttpService_CLASS_NAME Method:NSStringFromSelector(_cmd)];
 }
 
--(void)handleFailInfo:(HHZHttpResponse *)responeseObject
+-(void)handleFailInfo:(HHZHttpResponse *)responeseObject block:(RequestFailStateBlock)block
 {
     @throw [HHZMethodException exceptionWithClass:HHZHttpService_CLASS_NAME Method:NSStringFromSelector(_cmd)];
 }
