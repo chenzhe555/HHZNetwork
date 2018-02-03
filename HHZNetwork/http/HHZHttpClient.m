@@ -272,6 +272,8 @@
     BOOL printBasicInfo = NO;
     
     if ((DEBUG && type == HHZHttpPrintJSONDebug) || type == HHZHttpPrintJSONAlways) printBasicInfo = YES;
+    if (printBasicInfo) NSLog(@"\n<%@(%@)/tag:%lu>\n%@\n",str,url,(long)httpTag,paramaters);
+    
     if (DEBUG && [HHZHttpConfig shareManager].printHeaders)
     {
         NSLog(@"\n请求头信息:\n%@\n",task.currentRequest.allHTTPHeaderFields);

@@ -18,6 +18,7 @@ typedef NS_ENUM(NSInteger, HHZHttpAlertType){
     HHZHttpAlertTypeNone = 100,             //无弹框
     HHZHttpAlertTypeNative,                 //苹果自带系统弹框
     HHZHttpAlertTypeToast,                  //安卓风格的弹框
+    HHZHttpAlertTypeOthers,                 //项目中其它的
 };
 
 
