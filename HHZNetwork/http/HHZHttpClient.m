@@ -270,11 +270,14 @@
     else str = @"网络返回参数";
     
     BOOL printBasicInfo = NO;
-    
-    if ((DEBUG && type == HHZHttpPrintJSONDebug) || type == HHZHttpPrintJSONAlways) printBasicInfo = YES;
+    BOOL isDebug = NO;
+#ifdef DEBUG
+    isDebug = YES;
+#endif
+    if ((isDebug && type == HHZHttpPrintJSONDebug) || type == HHZHttpPrintJSONAlways) printBasicInfo = YES;
     if (printBasicInfo) NSLog(@"\n<%@(%@)/tag:%lu>\n%@\n",str,url,(long)httpTag,paramaters);
     
-    if (DEBUG && [HHZHttpConfig shareManager].printHeaders)
+    if (isDebug && [HHZHttpConfig shareManager].printHeaders)
     {
         NSLog(@"\n请求头信息:\n%@\n",task.currentRequest.allHTTPHeaderFields);
         if ([task.response isKindOfClass:[NSHTTPURLResponse class]])
