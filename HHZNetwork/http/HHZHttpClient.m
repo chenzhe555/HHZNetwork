@@ -197,7 +197,7 @@
     
     
     //添加Cookies
-    
+    [self addHttpCookies:condition];
 }
 
 +(void)handleSerializerType:(HHZHttpRequestCondition *)condition
@@ -310,23 +310,17 @@
 
 +(void)addHttpHeaders:(HHZHttpRequestCondition *)condition
 {
-    if (!condition.headersDic && condition.headersDic.allKeys.count > 0)
+    for (NSString * key in condition.headersDic)
     {
-        for (NSString * key in condition.headersDic)
-        {
-            [[HHZHttpManager shareManager] setValue:condition.headersDic[key] forKey:key];
-        }
+        [[HHZHttpManager shareManager] setValue:condition.headersDic[key] forKey:key];
     }
 }
 
 +(void)addHttpCookies:(HHZHttpRequestCondition *)condition
 {
-    if (!condition.cookiesDic && condition.cookiesDic.count > 0)
+    for (NSHTTPCookie * cookie in condition.cookiesDic)
     {
-        for (NSHTTPCookie * cookie in condition.cookiesDic)
-        {
-            [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookie:cookie];
-        }
+        [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookie:cookie];
     }
 }
 @end
