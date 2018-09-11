@@ -17,9 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
     if (self) {
         self.requestMethod = @"POST";
         self.timeOut = 30;
-        self.encryptionType = HHZEncryptionTypeNone;
-        self.isNeedToken = YES;
-        self.alertType = HHZHttpAlertTypeNone;
     }
     return self;
 }

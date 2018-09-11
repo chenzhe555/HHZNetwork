@@ -15,13 +15,13 @@
     if (self) {
         _managerName = nil;
         _needToken = YES;
-        _alertType = HHZHttpAlertTypeNative;
         _serializerType = HHZHttpSerializerType1;
         _httpType = HHZHttpProtocalTypeHTTP;
         _allowSniffer = YES;
         _allowInvalidCer = NO;
         _allowValidateDomain = NO;
         _printJSONType = HHZHttpPrintJSONDebug;
+        _encryptionType = HHZEncryptionTypeCustom;
     }
     return self;
 }

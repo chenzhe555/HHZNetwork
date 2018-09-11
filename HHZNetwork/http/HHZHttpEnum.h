@@ -36,6 +36,7 @@ typedef NS_ENUM(NSInteger,HHZEncryptionType){
     HHZEncryptionTypeNone = 300,            //无加密
     HHZEncryptionTypeMall,                  //商城
     HHZEncryptionTypeXiaoMei,               //小美
+    HHZEncryptionTypeCustom,                //自定义
 };
 
 //http/https

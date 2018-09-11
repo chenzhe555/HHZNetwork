@@ -33,7 +33,7 @@
     }
     else
     {
-        ((HHZHttpResponse *)responseObject).isRequestSuccessFail = YES;
+        ((HHZHttpResponse *)responseObject).requestFailState = 1;
         if (_delegate && [_delegate respondsToSelector:@selector(requestFail:)])
         {
             [_delegate performSelector:@selector(requestFail:) withObject:responseObject];
@@ -47,7 +47,7 @@
  */
 -(void)manageServiceFail:(HHZHttpResponse *)responseObject
 {
-    responseObject.isRequestSuccessFail = NO;
+    responseObject.requestFailState = 2;
     if (_delegate && [_delegate respondsToSelector:@selector(requestFail:)])
     {
         [_delegate performSelector:@selector(requestFail:) withObject:responseObject];
@@ -56,7 +56,7 @@
 
 -(void)handleFailInfo:(HHZHttpResponse *)responeseObject
 {
-    if (responeseObject.isRequestSuccessFail)
+    if (responeseObject.requestFailState == 1)
     {
         [self handleHttpSuccessErrorInfo:responeseObject];
     }

@@ -19,7 +19,7 @@
     [self addExtraParamatersWithCondition:request];
     
     //对参数加密
-    [self encryptionRequest:request];
+    [self encryptionRequest:request condition:condition];
     
     //处理Condition情况
     [self handleHttpCondition:condition];
@@ -118,7 +118,7 @@
     [self addExtraParamatersWithCondition:request];
     
     //对参数加密
-    [self encryptionRequest:request];
+    [self encryptionRequest:request condition:condition];
     
     //处理Condition情况
     [self handleHttpCondition:condition];
@@ -167,9 +167,9 @@
 
 
 
-+(void)encryptionRequest:(HHZHttpRequest *)request
++(void)encryptionRequest:(HHZHttpRequest *)request condition:(HHZHttpRequestCondition *)condition
 {
-    switch (request.encryptionType) {
+    switch (condition.encryptionType) {
         case HHZEncryptionTypeMall:
         {
             request.paramaters = [HHZHttpEncryption encrytionParameterMethod1:request.paramaters privateKeyArray:[HHZHttpEncryption setMethod1ParametersArray] AESKey:[HHZHttpEncryption setMethod1AESKey]];

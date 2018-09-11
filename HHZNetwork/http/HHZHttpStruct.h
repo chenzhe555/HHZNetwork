@@ -41,21 +41,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSInteger timeOut;
 
 /**
- *  请求参数是否加密
- */
-@property (nonatomic, assign) HHZEncryptionType encryptionType;
-
-/**
- *  是否需要Token(与后台协商的唯一标识)
- */
-@property (nonatomic, assign) BOOL isNeedToken;
-
-/**
- *  针对特定网络请求Service，设置请求失败后的弹框提示类型
- */
-@property (nonatomic, assign) HHZHttpAlertType alertType;
-
-/**
  *  请求头的字典@{@"":@""}
  */
 @property (nonatomic, strong) NSDictionary * headerDic;

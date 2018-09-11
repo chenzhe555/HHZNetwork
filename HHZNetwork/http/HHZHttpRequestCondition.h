@@ -19,6 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 //Manager的类名，有多个Manager的时候传入名，默认是nil
 @property (nonatomic, copy) NSString * _Nullable managerName;
 
+//加密方式
+@property (nonatomic, assign) HHZEncryptionType encryptionType;
+
 //是否需要带Token
 @property (nonatomic, assign) BOOL needToken;
 
