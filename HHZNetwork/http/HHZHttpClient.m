@@ -24,6 +24,9 @@
     //处理Condition情况
     [self handleHttpCondition:condition];
     
+    //处理Request情况
+    [self handleHttpRequest:request];
+    
     //打印参数信息
     [self handlePrintJSON:condition.printJSONType paramaters:request.paramaters url:request.url tag:httpTag isRequest:YES task:nil];
     
@@ -194,11 +197,21 @@
     [self handleHttpProtocalType:condition];
     
     //添加Headers
-    
+    [self addHttpHeaders:condition];
     
     //添加Cookies
     [self addHttpCookies:condition];
 }
+
++(void)handleHttpRequest:(HHZHttpRequest *)request
+{
+    //添加Headers
+    for (NSString * key in request.headerDic)
+    {
+        [[HHZHttpManager shareManager] setValue:request.headerDic[key] forKey:key];
+    }
+}
+
 
 +(void)handleSerializerType:(HHZHttpRequestCondition *)condition
 {
