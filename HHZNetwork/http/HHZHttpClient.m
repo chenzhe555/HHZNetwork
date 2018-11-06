@@ -208,7 +208,7 @@
     //添加Headers
     for (NSString * key in request.headerDic)
     {
-        [[HHZHttpManager shareManager] setValue:request.headerDic[key] forKey:key];
+        [[HHZHttpManager shareManager].requestSerializer setValue:request.headerDic[key] forKey:key];
     }
 }
 
@@ -325,7 +325,7 @@
 {
     for (NSString * key in condition.headersDic)
     {
-        [[HHZHttpManager shareManager] setValue:condition.headersDic[key] forKey:key];
+        [[HHZHttpManager shareManager].requestSerializer setValue:condition.headersDic[key] forKey:key];
     }
 }
 
